@@ -1,0 +1,5 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\library\inc -I..\os -I..\user -I..\user\mpu -I..\startup -I..\driver\inc 
+-I "E:\keil v4 for arm\ARM\RV31\INC" 
+-I "E:\keil v4 for arm\ARM\CMSIS\Include" 
+-I "E:\keil v4 for arm\ARM\Inc\ST\STM32F10x" 
+-o "clean_flash.o" --omf_browse "clean_flash.crf" --depend "clean_flash.d" "..\user\clean_flash.c"

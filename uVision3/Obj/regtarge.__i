@@ -1,0 +1,1 @@
+-c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I..\driver\inc -I..\library\inc -I..\os -I..\startup -I..\user -I..\user\mpu -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\ST\STM32F10x" -DVECT_TAB_FLASH -o ".\Obj\regtarge.o" --omf_browse ".\Obj\regtarge.crf" --depend ".\Obj\regtarge.d" "..\user\regtarge.c"

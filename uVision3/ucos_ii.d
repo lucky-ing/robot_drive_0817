@@ -1,0 +1,14 @@
+ucos_ii.o: ..\os\ucos_ii.c
+ucos_ii.o: ..\os\ucos_ii.h
+ucos_ii.o: ..\os\os_cfg.h
+ucos_ii.o: ..\os\os_cpu.h
+ucos_ii.o: ..\os\os_core.c
+ucos_ii.o: ..\os\os_flag.c
+ucos_ii.o: ..\os\os_mbox.c
+ucos_ii.o: ..\os\os_mem.c
+ucos_ii.o: ..\os\os_mutex.c
+ucos_ii.o: ..\os\os_q.c
+ucos_ii.o: ..\os\os_sem.c
+ucos_ii.o: ..\os\os_task.c
+ucos_ii.o: ..\os\os_time.c
+ucos_ii.o: ..\os\os_tmr.c

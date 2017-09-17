@@ -1,0 +1,2134 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\ultrasonic_project\firmware\X1_V1\uVision3\STM32F103_rtos.uvproj
+Project File Date:  10/14/2014
+
+<h2>Output:</h2>
+Build target 'BOOT_FLASH'
+compiling stm32f10x_it.c...
+..\startup\stm32f10x_it.c(739): warning:  #223-D: function "ultrasonic_tx_interrupt_enable" declared implicitly
+..\startup\stm32f10x_it.c:                      ultrasonic_tx_interrupt_enable(UL_TX_MID_POW, DISABLE);
+..\startup\stm32f10x_it.c:                      ^
+..\startup\stm32f10x_it.c(740): warning:  #223-D: function "ultrasonic_tx_emit" declared implicitly
+..\startup\stm32f10x_it.c:                      ultrasonic_tx_emit(UL_TX_MID_POW, DISABLE);
+..\startup\stm32f10x_it.c:                      ^
+..\startup\stm32f10x_it.c: ..\startup\stm32f10x_it.c: 2 warnings, 0 errors
+compiling stm32f10x_target.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_systick.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_tim1.c...
+compiling uart.c...
+compiling main.c...
+compiling create_task.c...
+compiling core_task.c...
+compiling malloc.c...
+compiling detect.c...
+compiling rf.c...
+..\user\rf.c(110): warning:  #177-D: variable "i" was declared but never referenced
+..\user\rf.c:           U8 i;
+..\user\rf.c:              ^
+..\user\rf.c(196): warning:  #177-D: variable "battery_voltage" was declared but never referenced
+..\user\rf.c:           U16 battery_voltage;
+..\user\rf.c:               ^
+..\user\rf.c(404): warning:  #111-D: statement is unreachable
+..\user\rf.c:           return KEY_NULL;
+..\user\rf.c:           ^
+..\user\rf.c(701): warning:  #550-D: variable "rc" was set but never used
+..\user\rf.c:           int rc;
+..\user\rf.c:               ^
+..\user\rf.c(742): warning:  #177-D: variable "rc" was declared but never referenced
+..\user\rf.c:           int rc;
+..\user\rf.c:               ^
+..\user\rf.c(1272): warning:  #223-D: function "Schedule_configure_write" declared implicitly
+..\user\rf.c:           Schedule_configure_write(&machine_save_config.schedule_save);
+..\user\rf.c:           ^
+..\user\rf.c(1277): warning:  #940-D: missing return statement at end of non-void function "deal_with_schedule_ok_key"
+..\user\rf.c:   }
+..\user\rf.c:   ^
+..\user\rf.c(1283): warning:  #177-D: variable "i" was declared but never referenced
+..\user\rf.c:           U8 i;
+..\user\rf.c:              ^
+..\user\rf.c(1425): warning:  #223-D: function "show_mop" declared implicitly
+..\user\rf.c:           show_mop(global_setting.mop_mode);
+..\user\rf.c:           ^
+..\user\rf.c(2174): warning:  #223-D: function "wifi_stored_read" declared implicitly
+..\user\rf.c:           wifi_stored_read();
+..\user\rf.c:           ^
+..\user\rf.c(2145): warning:  #177-D: variable "i" was declared but never referenced
+..\user\rf.c:           U8 i = 0;  
+..\user\rf.c:              ^
+..\user\rf.c: ..\user\rf.c: 11 warnings, 0 errors
+compiling display.c...
+..\user\display.c(238): warning:  #177-D: variable "j" was declared but never referenced
+..\user\display.c:      U8 j ;
+..\user\display.c:         ^
+..\user\display.c: ..\user\display.c: 1 warning, 0 errors
+compiling motor.c...
+..\user\motor.c(21): warning:  #223-D: function "wheel_action_get_type" declared implicitly
+..\user\motor.c:        if(wheel_action_get_type() == MACHINE_BACKWARD) {
+..\user\motor.c:           ^
+..\user\motor.c: ..\user\motor.c: 1 warning, 0 errors
+compiling tr24b.c...
+compiling rtc.c...
+compiling clean_flash.c...
+compiling motor_control.c...
+..\user\motor_control.c(193): warning:  #177-D: variable "demo_changed" was declared but never referenced
+..\user\motor_control.c:        U8 demo_changed = 0;
+..\user\motor_control.c:           ^
+..\user\motor_control.c(303): warning:  #177-D: label "netx" was declared but never referenced
+..\user\motor_control.c:   netx:
+..\user\motor_control.c:   ^
+..\user\motor_control.c: ..\user\motor_control.c: 2 warnings, 0 errors
+compiling motor_action.c...
+..\user\motor_action.c(348): warning:  #223-D: function "wheel_status_init" declared implicitly
+..\user\motor_action.c:         wheel_status_init();
+..\user\motor_action.c:         ^
+..\user\motor_action.c(452): warning:  #223-D: function "wheel_status_init" declared implicitly
+..\user\motor_action.c:         wheel_status_init();
+..\user\motor_action.c:         ^
+..\user\motor_action.c(512): warning:  #223-D: function "wheel_action_wait_finish" declared implicitly
+..\user\motor_action.c:                 wheel_action_wait_finish();
+..\user\motor_action.c:                 ^
+..\user\motor_action.c(559): warning:  #223-D: function "wheel_status_init" declared implicitly
+..\user\motor_action.c:         wheel_status_init();
+..\user\motor_action.c:         ^
+..\user\motor_action.c(616): warning:  #223-D: function "wheel_action_wait_finish" declared implicitly
+..\user\motor_action.c:                 wheel_action_wait_finish();
+..\user\motor_action.c:                 ^
+..\user\motor_action.c(670): warning:  #223-D: function "wheel_status_init" declared implicitly
+..\user\motor_action.c:         wheel_status_init();    
+..\user\motor_action.c:         ^
+..\user\motor_action.c(735): warning:  #223-D: function "wheel_action_wait_finish" declared implicitly
+..\user\motor_action.c:                 wheel_action_wait_finish();
+..\user\motor_action.c:                 ^
+..\user\motor_action.c(788): warning:  #223-D: function "wheel_status_init" declared implicitly
+..\user\motor_action.c:         wheel_status_init();
+..\user\motor_action.c:         ^
+..\user\motor_action.c(883): warning:  #223-D: function "wheel_action_wait_finish" declared implicitly
+..\user\motor_action.c:                 wheel_action_wait_finish();
+..\user\motor_action.c:                 ^
+..\user\motor_action.c: ..\user\motor_action.c: 9 warnings, 0 errors
+compiling motor_hal.c...
+..\user\motor_hal.c(24): warning:  #177-D: variable "now_int_finish" was declared but never referenced
+..\user\motor_hal.c:    U32 now_int_finish = 0;
+..\user\motor_hal.c:        ^
+..\user\motor_hal.c(63): warning:  #177-D: variable "now_int_finish" was declared but never referenced
+..\user\motor_hal.c:    U32 now_int_finish = 0;
+..\user\motor_hal.c:        ^
+..\user\motor_hal.c(111): warning:  #177-D: variable "now_int_finish" was declared but never referenced
+..\user\motor_hal.c:    U32 now_int_finish = 0;
+..\user\motor_hal.c:        ^
+..\user\motor_hal.c(143): warning:  #177-D: variable "now_int_finish" was declared but never referenced
+..\user\motor_hal.c:    U32 now_int_finish = 0;
+..\user\motor_hal.c:        ^
+..\user\motor_hal.c: ..\user\motor_hal.c: 4 warnings, 0 errors
+compiling motor_ir_detect.c...
+..\user\motor_ir_detect.c(181): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\motor_ir_detect.c:      while(wheel_action_get_finish_status() == 0 ) {
+..\user\motor_ir_detect.c:            ^
+..\user\motor_ir_detect.c(250): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\motor_ir_detect.c:      while(wheel_action_get_finish_status() == 0) {
+..\user\motor_ir_detect.c:            ^
+..\user\motor_ir_detect.c(237): warning:  #177-D: variable "top_ir" was declared but never referenced
+..\user\motor_ir_detect.c:      U16 top_ir=0,mid_ir=0,left_ir=0,right_ir=0;
+..\user\motor_ir_detect.c:          ^
+..\user\motor_ir_detect.c(237): warning:  #177-D: variable "mid_ir" was declared but never referenced
+..\user\motor_ir_detect.c:      U16 top_ir=0,mid_ir=0,left_ir=0,right_ir=0;
+..\user\motor_ir_detect.c:                   ^
+..\user\motor_ir_detect.c(237): warning:  #177-D: variable "left_ir" was declared but never referenced
+..\user\motor_ir_detect.c:      U16 top_ir=0,mid_ir=0,left_ir=0,right_ir=0;
+..\user\motor_ir_detect.c:                            ^
+..\user\motor_ir_detect.c(237): warning:  #177-D: variable "right_ir" was declared but never referenced
+..\user\motor_ir_detect.c:      U16 top_ir=0,mid_ir=0,left_ir=0,right_ir=0;
+..\user\motor_ir_detect.c:                                      ^
+..\user\motor_ir_detect.c(403): warning:  #223-D: function "mpu_get_current_yaw" declared implicitly
+..\user\motor_ir_detect.c:                      start_yaw = mpu_get_current_yaw(&start_yaw);
+..\user\motor_ir_detect.c:                                  ^
+..\user\motor_ir_detect.c(409): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\motor_ir_detect.c:                      while(wheel_action_get_finish_status() == 0) {
+..\user\motor_ir_detect.c:                            ^
+..\user\motor_ir_detect.c(818): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\motor_ir_detect.c:                                      while(wheel_action_get_finish_status() == 0) {
+..\user\motor_ir_detect.c:                                            ^
+..\user\motor_ir_detect.c(325): warning:  #177-D: variable "arc" was declared but never referenced
+..\user\motor_ir_detect.c:      U8 arc;
+..\user\motor_ir_detect.c:         ^
+..\user\motor_ir_detect.c: ..\user\motor_ir_detect.c: 10 warnings, 0 errors
+compiling motor_power.c...
+..\user\motor_power.c(49): warning:  #111-D: statement is unreachable
+..\user\motor_power.c:          return 0;
+..\user\motor_power.c:          ^
+..\user\motor_power.c(68): warning:  #111-D: statement is unreachable
+..\user\motor_power.c:          return 0;
+..\user\motor_power.c:          ^
+..\user\motor_power.c(75): warning:  #550-D: variable "wifi_week" was set but never used
+..\user\motor_power.c:          U8 wifi_week = 0;
+..\user\motor_power.c:             ^
+..\user\motor_power.c(76): warning:  #177-D: variable "p" was declared but never referenced
+..\user\motor_power.c:          struct stored_schedule_config *p=(struct stored_schedule_config *)ScheduleStartAddr;
+..\user\motor_power.c:                                         ^
+..\user\motor_power.c(166): warning:  #177-D: variable "charging_status" was declared but never referenced
+..\user\motor_power.c:          U8 charging_status;
+..\user\motor_power.c:             ^
+..\user\motor_power.c(167): warning:  #177-D: variable "charging_done" was declared but never referenced
+..\user\motor_power.c:          U8 charging_done;
+..\user\motor_power.c:             ^
+..\user\motor_power.c(222): warning: C3017W: battery_voltage may be used before being set
+..\user\motor_power.c:  U16     battery_voltage ;
+..\user\motor_power.c:      ^
+..\user\motor_power.c: ..\user\motor_power.c: 7 warnings, 0 errors
+compiling motor_run_fsm.c...
+..\user\motor_run_fsm.c(244): warning:  #223-D: function "mpu_get_current_yaw" declared implicitly
+..\user\motor_run_fsm.c:                                mpu_get_current_yaw(&yaw);
+..\user\motor_run_fsm.c:                                ^
+..\user\motor_run_fsm.c(48): warning:  #177-D: variable "left_dist" was declared but never referenced
+..\user\motor_run_fsm.c:        U16 left_dist, right_dist;
+..\user\motor_run_fsm.c:            ^
+..\user\motor_run_fsm.c(48): warning:  #177-D: variable "right_dist" was declared but never referenced
+..\user\motor_run_fsm.c:        U16 left_dist, right_dist;
+..\user\motor_run_fsm.c:                       ^
+..\user\motor_run_fsm.c(49): warning:  #177-D: variable "finish_dist" was declared but never referenced
+..\user\motor_run_fsm.c:        U16 finish_dist;
+..\user\motor_run_fsm.c:            ^
+..\user\motor_run_fsm.c(51): warning:  #177-D: variable "dist" was declared but never referenced
+..\user\motor_run_fsm.c:        U16 dist = 0;
+..\user\motor_run_fsm.c:            ^
+..\user\motor_run_fsm.c(52): warning:  #177-D: variable "adjust_flag" was declared but never referenced
+..\user\motor_run_fsm.c:        U8 adjust_flag = 0;
+..\user\motor_run_fsm.c:           ^
+..\user\motor_run_fsm.c(53): warning:  #177-D: variable "rc" was declared but never referenced
+..\user\motor_run_fsm.c:        U8 rc = 0;
+..\user\motor_run_fsm.c:           ^
+..\user\motor_run_fsm.c(377): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\motor_run_fsm.c:        walk_dist = wheel_action_get_walk_dist();
+..\user\motor_run_fsm.c:                    ^
+..\user\motor_run_fsm.c(371): warning:  #177-D: variable "now_time" was declared but never referenced
+..\user\motor_run_fsm.c:        U32 now_time = 0;
+..\user\motor_run_fsm.c:            ^
+..\user\motor_run_fsm.c(460): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\motor_run_fsm.c:        walk_dist = wheel_action_get_walk_dist();
+..\user\motor_run_fsm.c:                    ^
+..\user\motor_run_fsm.c(547): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\motor_run_fsm.c:        walk_dist = wheel_action_get_walk_dist();
+..\user\motor_run_fsm.c:                    ^
+..\user\motor_run_fsm.c(643): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\motor_run_fsm.c:        while(wheel_action_get_finish_status() == 0){
+..\user\motor_run_fsm.c:              ^
+..\user\motor_run_fsm.c(612): warning:  #177-D: variable "i" was declared but never referenced
+..\user\motor_run_fsm.c:        U8 i;
+..\user\motor_run_fsm.c:           ^
+..\user\motor_run_fsm.c(613): warning:  #177-D: variable "back_side_out" was declared but never referenced
+..\user\motor_run_fsm.c:        U8 back_side_out  = 0;
+..\user\motor_run_fsm.c:           ^
+..\user\motor_run_fsm.c(751): warning:  #223-D: function "wheel_action_get_type" declared implicitly
+..\user\motor_run_fsm.c:        if(wheel_action_get_type() == MACHINE_BACKWARD){
+..\user\motor_run_fsm.c:           ^
+..\user\motor_run_fsm.c(727): warning:  #177-D: variable "arg" was declared but never referenced
+..\user\motor_run_fsm.c:        U8 arg;
+..\user\motor_run_fsm.c:           ^
+..\user\motor_run_fsm.c(729): warning:  #177-D: variable "back_r_delta" was declared but never referenced
+..\user\motor_run_fsm.c:        U16 back_r_delta, back_l_delta;
+..\user\motor_run_fsm.c:            ^
+..\user\motor_run_fsm.c(729): warning:  #177-D: variable "back_l_delta" was declared but never referenced
+..\user\motor_run_fsm.c:        U16 back_r_delta, back_l_delta;
+..\user\motor_run_fsm.c:                          ^
+..\user\motor_run_fsm.c(731): warning:  #177-D: variable "re_detect" was declared but never referenced
+..\user\motor_run_fsm.c:        U8 re_detect = 0;
+..\user\motor_run_fsm.c:           ^
+..\user\motor_run_fsm.c(39): warning:  #177-D: function "robot_move_status" was declared but never referenced
+..\user\motor_run_fsm.c:   static void robot_move_status(u8 status_now){
+..\user\motor_run_fsm.c:               ^
+..\user\motor_run_fsm.c: ..\user\motor_run_fsm.c: 20 warnings, 0 errors
+compiling motor_security.c...
+..\user\motor_security.c(19): warning:  #177-D: variable "dustbin_status" was declared but never referenced
+..\user\motor_security.c:       U8 dustbin_status = 0;
+..\user\motor_security.c:          ^
+..\user\motor_security.c(20): warning:  #177-D: variable "dustbin_is_full" was declared but never referenced
+..\user\motor_security.c:       U8 dustbin_is_full = 0;
+..\user\motor_security.c:          ^
+..\user\motor_security.c(21): warning:  #177-D: variable "i" was declared but never referenced
+..\user\motor_security.c:       U8 i;
+..\user\motor_security.c:          ^
+..\user\motor_security.c(62): warning:  #223-D: function "side_motor_get_threashold" declared implicitly
+..\user\motor_security.c:       side_motor_overflow = side_motor_get_threashold();
+..\user\motor_security.c:                             ^
+..\user\motor_security.c(178): warning:  #223-D: function "side_motor_get_threashold" declared implicitly
+..\user\motor_security.c:       side_motor_overflow = side_motor_get_threashold();
+..\user\motor_security.c:                             ^
+..\user\motor_security.c(481): warning:  #223-D: function "wheel_action_get_type" declared implicitly
+..\user\motor_security.c:       if(wheel_action_get_type()== MACHINE_STOP || wheel_action_get_type() == MACHINE_BACKWARD){
+..\user\motor_security.c:          ^
+..\user\motor_security.c(813): warning:  #177-D: variable "left_current" was declared but never referenced
+..\user\motor_security.c:       U16 left_current, right_current;
+..\user\motor_security.c:           ^
+..\user\motor_security.c(813): warning:  #177-D: variable "right_current" was declared but never referenced
+..\user\motor_security.c:       U16 left_current, right_current;
+..\user\motor_security.c:                         ^
+..\user\motor_security.c: ..\user\motor_security.c: 8 warnings, 0 errors
+compiling motor_timeout.c...
+..\user\motor_timeout.c(20): warning:  #550-D: variable "last_index" was set but never used
+..\user\motor_timeout.c:        U8 last_index = 0;
+..\user\motor_timeout.c:           ^
+..\user\motor_timeout.c: ..\user\motor_timeout.c: 1 warning, 0 errors
+compiling motor_task.c...
+..\user\motor_task.c(605): warning:  #223-D: function "show_demo_flag" declared implicitly
+..\user\motor_task.c:           show_demo_flag(0);
+..\user\motor_task.c:           ^
+..\user\motor_task.c(505): warning:  #177-D: variable "delta_time" was declared but never referenced
+..\user\motor_task.c:           U32 delta_time = 0;
+..\user\motor_task.c:               ^
+..\user\motor_task.c(625): warning:  #177-D: variable "tl" was declared but never referenced
+..\user\motor_task.c:           task_list_t *tl = NULL;
+..\user\motor_task.c:                        ^
+..\user\motor_task.c(286): warning: C3017W: tl may be used before being set
+..\user\motor_task.c:   task_list_t *tl;
+..\user\motor_task.c:               ^
+..\user\motor_task.c: ..\user\motor_task.c: 4 warnings, 0 errors
+compiling kdebug.c...
+compiling voice.c...
+compiling hoover_disp.c...
+..\user\hoover_disp.c(1100): warning:  #177-D: variable "nib" was declared but never referenced
+..\user\hoover_disp.c:          U8 ten,nib;
+..\user\hoover_disp.c:                 ^
+..\user\hoover_disp.c(1502): warning:  #177-D: variable "i" was declared but never referenced
+..\user\hoover_disp.c:          U8 i = 0;
+..\user\hoover_disp.c:             ^
+..\user\hoover_disp.c(1650): warning:  #177-D: variable "i" was declared but never referenced
+..\user\hoover_disp.c:          U8 i;
+..\user\hoover_disp.c:             ^
+..\user\hoover_disp.c: ..\user\hoover_disp.c: 3 warnings, 0 errors
+compiling a7105.c...
+..\user\a7105.c(525): warning:  #550-D: variable "fb" was set but never used
+..\user\a7105.c:        U8 fb,fbcf;
+..\user\a7105.c:           ^
+..\user\a7105.c(526): warning:  #550-D: variable "dvt1" was set but never used
+..\user\a7105.c:        U8 vb1,vbcf1,dvt1;
+..\user\a7105.c:                     ^
+..\user\a7105.c(527): warning:  #550-D: variable "dvt2" was set but never used
+..\user\a7105.c:        U8 vb2,vbcf2,dvt2;
+..\user\a7105.c:                     ^
+..\user\a7105.c: ..\user\a7105.c: 3 warnings, 0 errors
+compiling lcm.c...
+..\user\lcm.c(28): warning:  #177-D: variable "current_day" was declared but never referenced
+..\user\lcm.c:          U8 current_day = 0;
+..\user\lcm.c:             ^
+..\user\lcm.c(328): warning:  #550-D: variable "charge_show" was set but never used
+..\user\lcm.c:          U8 charge_show = 0;
+..\user\lcm.c:             ^
+..\user\lcm.c(334): warning:  #177-D: variable "t_i" was declared but never referenced
+..\user\lcm.c:          U8 *t_i =NULL ;
+..\user\lcm.c:              ^
+..\user\lcm.c(346): warning:  #550-D: variable "wifi_week" was set but never used
+..\user\lcm.c:          U8 wifi_week = 0;
+..\user\lcm.c:             ^
+..\user\lcm.c: ..\user\lcm.c: 4 warnings, 0 errors
+compiling wifi_command.c...
+..\user\wifi_command.c(71): warning:  #223-D: function "memcpy" declared implicitly
+..\user\wifi_command.c:         memcpy(&save_times,times_def,sizeof(struct stored_times_t));
+..\user\wifi_command.c:         ^
+..\user\wifi_command.c(64): warning:  #177-D: variable "EraseCounter" was declared but never referenced
+..\user\wifi_command.c:         u32 EraseCounter = 0x00, Address = 0x00;
+..\user\wifi_command.c:             ^
+..\user\wifi_command.c(124): warning:  #223-D: function "memcpy" declared implicitly
+..\user\wifi_command.c:         memcpy(&save,times_def,sizeof(struct stored_schedule_config));
+..\user\wifi_command.c:         ^
+..\user\wifi_command.c: ..\user\wifi_command.c: 3 warnings, 0 errors
+compiling wifi.c...
+..\user\wifi.c(317): warning:  #14-D: extra text after expected end of preprocessing directive
+..\user\wifi.c:   #else{
+..\user\wifi.c:        ^
+..\user\wifi.c: ..\user\wifi.c: 1 warning, 0 errors
+compiling ultrasonic.c...
+..\user\ultrasonic.c(280): warning:  #550-D: variable "last_item" was set but never used
+..\user\ultrasonic.c:           ultrasonic_mid_record_item_t *last_item;
+..\user\ultrasonic.c:                                         ^
+..\user\ultrasonic.c(411): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                           GPIO_WriteBit(GPIOE, GPIO_Pin_11, en);
+..\user\ultrasonic.c:                                                             ^
+..\user\ultrasonic.c(416): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                           GPIO_WriteBit(GPIOB, GPIO_Pin_10, en);
+..\user\ultrasonic.c:                                                             ^
+..\user\ultrasonic.c(420): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                           GPIO_WriteBit(GPIOD, GPIO_Pin_4, en);
+..\user\ultrasonic.c:                                                            ^
+..\user\ultrasonic.c(425): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                           GPIO_WriteBit(GPIOD, GPIO_Pin_10, en);
+..\user\ultrasonic.c:                                                             ^
+..\user\ultrasonic.c(592): warning:  #177-D: variable "TIM1_OCInitStructure" was declared but never referenced
+..\user\ultrasonic.c:           TIM1_OCInitTypeDef  TIM1_OCInitStructure;
+..\user\ultrasonic.c:                               ^
+..\user\ultrasonic.c(709): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                   TIM_ITConfig(TIM2, TIM_IT_CC2, enable);  //打开中断
+..\user\ultrasonic.c:                                                  ^
+..\user\ultrasonic.c(710): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                   TIM_ITConfig(TIM2, TIM_IT_CC4, enable);  //打开中断
+..\user\ultrasonic.c:                                                  ^
+..\user\ultrasonic.c(738): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                   TIM_ITConfig(TIM2, TIM_IT_CC1, enable);  //打开中断
+..\user\ultrasonic.c:                                                  ^
+..\user\ultrasonic.c(739): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                   TIM_ITConfig(TIM2, TIM_IT_CC4, enable);  //打开中断
+..\user\ultrasonic.c:                                                  ^
+..\user\ultrasonic.c(757): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                   TIM_ITConfig(TIM2, TIM_IT_CC1, enable);  //打开中断
+..\user\ultrasonic.c:                                                  ^
+..\user\ultrasonic.c(784): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                   TIM_ITConfig(TIM2, TIM_IT_CC2, enable);  //打开中断
+..\user\ultrasonic.c:                                                  ^
+..\user\ultrasonic.c(640): warning:  #177-D: variable "GPIO_InitStructure" was declared but never referenced
+..\user\ultrasonic.c:           GPIO_InitTypeDef GPIO_InitStructure;
+..\user\ultrasonic.c:                            ^
+..\user\ultrasonic.c(837): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                   TIM_ITConfig(TIM2, TIM_IT_CC3, enable);  //打开中断
+..\user\ultrasonic.c:                                                  ^
+..\user\ultrasonic.c(838): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                   TIM_ITConfig(TIM2, TIM_IT_CC4, enable);  //打开中断
+..\user\ultrasonic.c:                                                  ^
+..\user\ultrasonic.c(851): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                   TIM_ITConfig(TIM2, TIM_IT_CC2, enable);  //打开中断
+..\user\ultrasonic.c:                                                  ^
+..\user\ultrasonic.c(862): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                   TIM_ITConfig(TIM2, TIM_IT_CC1, enable);  //打开中断
+..\user\ultrasonic.c:                                                  ^
+..\user\ultrasonic.c(873): warning:  #177-D: variable "TIM1_OCInitStructure" was declared but never referenced
+..\user\ultrasonic.c:           TIM1_OCInitTypeDef  TIM1_OCInitStructure;
+..\user\ultrasonic.c:                               ^
+..\user\ultrasonic.c(900): warning:  #177-D: variable "TIM1_TimeBaseStructure" was declared but never referenced
+..\user\ultrasonic.c:           TIM1_TimeBaseInitTypeDef  TIM1_TimeBaseStructure;
+..\user\ultrasonic.c:                                     ^
+..\user\ultrasonic.c(901): warning:  #177-D: variable "TIM1_OCInitStructure" was declared but never referenced
+..\user\ultrasonic.c:           TIM1_OCInitTypeDef  TIM1_OCInitStructure;
+..\user\ultrasonic.c:                               ^
+..\user\ultrasonic.c(902): warning:  #177-D: variable "TIM1_BDTRInitStructure" was declared but never referenced
+..\user\ultrasonic.c:           TIM1_BDTRInitTypeDef TIM1_BDTRInitStructure;
+..\user\ultrasonic.c:                                ^
+..\user\ultrasonic.c(938): warning:  #177-D: variable "GPIO_InitStructure" was declared but never referenced
+..\user\ultrasonic.c:           GPIO_InitTypeDef GPIO_InitStructure;
+..\user\ultrasonic.c:                            ^
+..\user\ultrasonic.c(1214): warning:  #223-D: function "wheel_action_get_type" declared implicitly
+..\user\ultrasonic.c:                   if(wheel_action_get_type() == MACHINE_SL_FORWARD){
+..\user\ultrasonic.c:                      ^
+..\user\ultrasonic.c(1215): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ultrasonic.c:                           item.walk_dist = wheel_action_get_walk_dist();
+..\user\ultrasonic.c:                                            ^
+..\user\ultrasonic.c(1088): warning:  #177-D: variable "k" was declared but never referenced
+..\user\ultrasonic.c:           U16 k;
+..\user\ultrasonic.c:               ^
+..\user\ultrasonic.c(1092): warning:  #177-D: variable "front_ad_dist" was declared but never referenced
+..\user\ultrasonic.c:           U32 front_ad_dist = 0;
+..\user\ultrasonic.c:               ^
+..\user\ultrasonic.c(1097): warning:  #177-D: variable "right_ul_adc_recv" was declared but never referenced
+..\user\ultrasonic.c:           U8 right_ul_adc_recv = 0;
+..\user\ultrasonic.c:              ^
+..\user\ultrasonic.c(1100): warning:  #177-D: variable "walk_dist" was declared but never referenced
+..\user\ultrasonic.c:           U16 walk_dist = 0;
+..\user\ultrasonic.c:               ^
+..\user\ultrasonic.c(1232): warning:  #177-D: variable "k" was declared but never referenced
+..\user\ultrasonic.c:           U16 k;
+..\user\ultrasonic.c:               ^
+..\user\ultrasonic.c(1235): warning:  #177-D: variable "delta_time" was declared but never referenced
+..\user\ultrasonic.c:           U32 delta_time;
+..\user\ultrasonic.c:               ^
+..\user\ultrasonic.c(1237): warning:  #177-D: variable "front_dist" was declared but never referenced
+..\user\ultrasonic.c:           U32 front_dist = 0;
+..\user\ultrasonic.c:               ^
+..\user\ultrasonic.c(279): warning: C3017W: item may be used before being set
+..\user\ultrasonic.c:   ultrasonic_mid_record_item_t *item;
+..\user\ultrasonic.c:                                ^
+..\user\ultrasonic.c: ..\user\ultrasonic.c: 32 warnings, 0 errors
+compiling motor_wheel.c...
+..\user\motor_wheel.c(108): warning:  #940-D: missing return statement at end of non-void function "wheel_turn_get_finish_percent"
+..\user\motor_wheel.c:   }
+..\user\motor_wheel.c:   ^
+..\user\motor_wheel.c(157): warning:  #940-D: missing return statement at end of non-void function "wheel_action_wait_finish"
+..\user\motor_wheel.c:   }
+..\user\motor_wheel.c:   ^
+..\user\motor_wheel.c(171): warning:  #550-D: variable "old_dest_yaw" was set but never used
+..\user\motor_wheel.c:          float old_dest_yaw ;
+..\user\motor_wheel.c:                ^
+..\user\motor_wheel.c(527): warning:  #940-D: missing return statement at end of non-void function "wheel_action_get_speed"
+..\user\motor_wheel.c:   }
+..\user\motor_wheel.c:   ^
+..\user\motor_wheel.c(541): warning:  #177-D: variable "current_l_dest_int" was declared but never referenced
+..\user\motor_wheel.c:          U32 current_l_dest_int;
+..\user\motor_wheel.c:              ^
+..\user\motor_wheel.c(542): warning:  #177-D: variable "current_r_dest_int" was declared but never referenced
+..\user\motor_wheel.c:          U32 current_r_dest_int;
+..\user\motor_wheel.c:              ^
+..\user\motor_wheel.c(548): warning:  #177-D: variable "current_div" was declared but never referenced
+..\user\motor_wheel.c:          U32 current_div;
+..\user\motor_wheel.c:              ^
+..\user\motor_wheel.c(562): warning:  #550-D: variable "left_cur" was set but never used
+..\user\motor_wheel.c:          U16 left_cur, right_cur;
+..\user\motor_wheel.c:              ^
+..\user\motor_wheel.c(562): warning:  #550-D: variable "right_cur" was set but never used
+..\user\motor_wheel.c:          U16 left_cur, right_cur;
+..\user\motor_wheel.c:                        ^
+..\user\motor_wheel.c(563): warning:  #550-D: variable "last_left_pwm" was set but never used
+..\user\motor_wheel.c:          U16 last_left_pwm, last_right_pwm;
+..\user\motor_wheel.c:              ^
+..\user\motor_wheel.c(563): warning:  #550-D: variable "last_right_pwm" was set but never used
+..\user\motor_wheel.c:          U16 last_left_pwm, last_right_pwm;
+..\user\motor_wheel.c:                             ^
+..\user\motor_wheel.c(1113): warning:  #177-D: variable "current_l_dest_int" was declared but never referenced
+..\user\motor_wheel.c:          U32 current_l_dest_int;
+..\user\motor_wheel.c:              ^
+..\user\motor_wheel.c(1114): warning:  #177-D: variable "current_r_dest_int" was declared but never referenced
+..\user\motor_wheel.c:          U32 current_r_dest_int;
+..\user\motor_wheel.c:              ^
+..\user\motor_wheel.c(1120): warning:  #177-D: variable "current_div" was declared but never referenced
+..\user\motor_wheel.c:          U32 current_div;
+..\user\motor_wheel.c:              ^
+..\user\motor_wheel.c(1128): warning:  #177-D: variable "speed_add" was declared but never referenced
+..\user\motor_wheel.c:          U8 speed_add;
+..\user\motor_wheel.c:             ^
+..\user\motor_wheel.c(1496): warning:  #940-D: missing return statement at end of non-void function "wheel_task_deal_event"
+..\user\motor_wheel.c:   }
+..\user\motor_wheel.c:   ^
+..\user\motor_wheel.c: ..\user\motor_wheel.c: 16 warnings, 0 errors
+compiling ul_fsm.c...
+..\user\ul_fsm.c(141): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\ul_fsm.c:       while(wheel_action_get_finish_status() == 0) {
+..\user\ul_fsm.c:             ^
+..\user\ul_fsm.c(153): warning:  #223-D: function "ultrasonic_get_last_record" declared implicitly
+..\user\ul_fsm.c:                       ultrasonic_get_last_record(UL_TX_FRONT_LEFT_POW, &left_dist, &mid_left_dist);
+..\user\ul_fsm.c:                       ^
+..\user\ul_fsm.c(161): warning:  #223-D: function "ultrasonic_get_last_record" declared implicitly
+..\user\ul_fsm.c:                       ultrasonic_get_last_record(UL_TX_FRONT_RIGHT_POW, &mid_right_dist, &right_dist);
+..\user\ul_fsm.c:                       ^
+..\user\ul_fsm.c(62): warning:  #177-D: variable "direction" was declared but never referenced
+..\user\ul_fsm.c:       U8 direction = 0;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(63): warning:  #177-D: variable "i" was declared but never referenced
+..\user\ul_fsm.c:       U8 i;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(64): warning:  #177-D: variable "dest_event" was declared but never referenced
+..\user\ul_fsm.c:       U8 dest_event = UL_EVENT_NONE;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(237): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(245): warning:  #223-D: function "ultrasonic_get_last_record" declared implicitly
+..\user\ul_fsm.c:               ultrasonic_get_last_record(UL_TX_MID_POW, &left_dist, &right_dist);
+..\user\ul_fsm.c:               ^
+..\user\ul_fsm.c(230): warning:  #177-D: variable "dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 dist = 0;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(231): warning:  #177-D: variable "i" was declared but never referenced
+..\user\ul_fsm.c:       U8 i;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(365): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:               walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                           ^
+..\user\ul_fsm.c(352): warning:  #177-D: variable "dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(355): warning:  #177-D: variable "left_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(355): warning:  #177-D: variable "right_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:                      ^
+..\user\ul_fsm.c(460): warning:  #223-D: function "mpu_get_current_yaw" declared implicitly
+..\user\ul_fsm.c:       mpu_get_current_yaw(&current_yaw);
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(507): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(612): warning:  #223-D: function "mpu_get_current_yaw" declared implicitly
+..\user\ul_fsm.c:                               mpu_get_current_yaw(&yaw);
+..\user\ul_fsm.c:                               ^
+..\user\ul_fsm.c(741): warning:  #940-D: missing return statement at end of non-void function "ul_walking_timeout"
+..\user\ul_fsm.c:   }
+..\user\ul_fsm.c:   ^
+..\user\ul_fsm.c(502): warning:  #177-D: variable "left_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(502): warning:  #177-D: variable "right_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:                      ^
+..\user\ul_fsm.c(504): warning:  #177-D: variable "mid_left_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 mid_left_dist, mid_right_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(504): warning:  #177-D: variable "mid_right_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 mid_left_dist, mid_right_dist;
+..\user\ul_fsm.c:                          ^
+..\user\ul_fsm.c(796): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(899): warning:  #223-D: function "mpu_get_current_yaw" declared implicitly
+..\user\ul_fsm.c:                               mpu_get_current_yaw(&yaw);
+..\user\ul_fsm.c:                               ^
+..\user\ul_fsm.c(785): warning:  #177-D: variable "left_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(785): warning:  #177-D: variable "right_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:                      ^
+..\user\ul_fsm.c(786): warning:  #177-D: variable "finish_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 finish_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(788): warning:  #177-D: variable "dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 dist = 0;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(789): warning:  #177-D: variable "adjust_flag" was declared but never referenced
+..\user\ul_fsm.c:       U8 adjust_flag = 0;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(790): warning:  #177-D: variable "rc" was declared but never referenced
+..\user\ul_fsm.c:       U8 rc = 0;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(1007): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(1259): warning:  #223-D: function "mpu_get_current_yaw" declared implicitly
+..\user\ul_fsm.c:                               mpu_get_current_yaw(&yaw);
+..\user\ul_fsm.c:                               ^
+..\user\ul_fsm.c(1394): warning:  #940-D: missing return statement at end of non-void function "ul_fsm_parse_event"
+..\user\ul_fsm.c:   }
+..\user\ul_fsm.c:   ^
+..\user\ul_fsm.c(992): warning:  #177-D: variable "finish_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 finish_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(994): warning:  #177-D: variable "dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 dist = 0;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(995): warning:  #550-D: variable "adjust_flag" was set but never used
+..\user\ul_fsm.c:       U8 adjust_flag = 0;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(1705): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(1876): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(1983): warning:  #177-D: variable "left_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(1983): warning:  #177-D: variable "right_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:                      ^
+..\user\ul_fsm.c(2072): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       ul_fsm_wall_finding_right_near,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2076): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       ul_fsm_close_mid_adjust,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2079): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       ul_fsm_along_near,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2083): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       ul_fsm_along_away,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2086): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       ul_cornor_walking_parse, //ul_fsm_cornor_walking,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2090): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       ul_walking_timeout,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2093): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       ul_fsm_forward_lost_ward,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2096): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       ul_fsm_forward_knock,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2100): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       ul_fsm_climb,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2103): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       ul_fsm_boundary,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2115): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       fsm_around_object,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2145): warning:  #940-D: missing return statement at end of non-void function "fsm_around_object"
+..\user\ul_fsm.c:   }
+..\user\ul_fsm.c:   ^
+..\user\ul_fsm.c(2160): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(2294): warning:  #223-D: function "mpu_get_current_yaw" declared implicitly
+..\user\ul_fsm.c:                               mpu_get_current_yaw(&yaw);
+..\user\ul_fsm.c:                               ^
+..\user\ul_fsm.c(2149): warning:  #177-D: variable "left_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(2149): warning:  #177-D: variable "right_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:                      ^
+..\user\ul_fsm.c(2150): warning:  #177-D: variable "finish_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 finish_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(2152): warning:  #177-D: variable "dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 dist = 0;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(2153): warning:  #177-D: variable "adjust_flag" was declared but never referenced
+..\user\ul_fsm.c:       U8 adjust_flag = 0;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(2154): warning:  #177-D: variable "rc" was declared but never referenced
+..\user\ul_fsm.c:       U8 rc = 0;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(2461): warning:  #940-D: missing return statement at end of non-void function "ul_fsm_boundary"
+..\user\ul_fsm.c:   }
+..\user\ul_fsm.c:   ^
+..\user\ul_fsm.c(2475): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(2496): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\ul_fsm.c:               if(wheel_action_get_finish_status()) {
+..\user\ul_fsm.c:                  ^
+..\user\ul_fsm.c(2601): warning:  #223-D: function "mpu_get_current_yaw" declared implicitly
+..\user\ul_fsm.c:                               mpu_get_current_yaw(&yaw);
+..\user\ul_fsm.c:                               ^
+..\user\ul_fsm.c(2464): warning:  #177-D: variable "left_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(2464): warning:  #177-D: variable "right_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:                      ^
+..\user\ul_fsm.c(2465): warning:  #177-D: variable "finish_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 finish_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(2467): warning:  #177-D: variable "dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 dist = 0;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(2468): warning:  #177-D: variable "adjust_flag" was declared but never referenced
+..\user\ul_fsm.c:       U8 adjust_flag = 0;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(2469): warning:  #177-D: variable "rc" was declared but never referenced
+..\user\ul_fsm.c:       U8 rc = 0;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(2726): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\ul_fsm.c:                               if(wheel_action_get_finish_status()) {
+..\user\ul_fsm.c:                                  ^
+..\user\ul_fsm.c(2775): warning:  #117-D: non-void function "ul_fsm_climb" should return a value
+..\user\ul_fsm.c:                               return ;
+..\user\ul_fsm.c:                                      ^
+..\user\ul_fsm.c(2791): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\ul_fsm.c:                               if(wheel_action_get_finish_status()) {
+..\user\ul_fsm.c:                                  ^
+..\user\ul_fsm.c(2836): warning:  #940-D: missing return statement at end of non-void function "ul_fsm_climb"
+..\user\ul_fsm.c:   }
+..\user\ul_fsm.c:   ^
+..\user\ul_fsm.c(3735): warning:  #940-D: missing return statement at end of non-void function "ul_fsm_forward_knock"
+..\user\ul_fsm.c:   }
+..\user\ul_fsm.c:   ^
+..\user\ul_fsm.c(3751): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(3949): warning:  #111-D: statement is unreachable
+..\user\ul_fsm.c:       if(clean_fsm.cornor_walking != 1 ||clean_fsm.current_state != STATE_ALONG_CORNOR_WALKING) {
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(3955): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(3979): warning:  #111-D: statement is unreachable
+..\user\ul_fsm.c:       if(clean_fsm.cornor_walking != 1 ||clean_fsm.current_state != STATE_ALONG_CORNOR_WALKING) {
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(3985): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(4013): warning:  #111-D: statement is unreachable
+..\user\ul_fsm.c:       if(clean_fsm.current_state != STATE_APPROACH_CORNOR ) {
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(4020): warning:  #223-D: function "ultrasonic_get_last_record" declared implicitly
+..\user\ul_fsm.c:               ultrasonic_get_last_record(UL_TX_MID_POW, &left_dist, &right_dist);
+..\user\ul_fsm.c:               ^
+..\user\ul_fsm.c(4036): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(4055): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\ul_fsm.c:       while(wheel_action_get_finish_status() == 0) {
+..\user\ul_fsm.c:             ^
+..\user\ul_fsm.c(4063): warning:  #223-D: function "ultrasonic_get_last_record" declared implicitly
+..\user\ul_fsm.c:                       ultrasonic_get_last_record(UL_TX_MID_POW, &left_dist, &right_dist);
+..\user\ul_fsm.c:                       ^
+..\user\ul_fsm.c(4098): warning:  #117-D: non-void function "ul_fsm_wall_finding_right_near" should return a value
+..\user\ul_fsm.c:       return ;
+..\user\ul_fsm.c:              ^
+..\user\ul_fsm.c(4146): warning:  #940-D: missing return statement at end of non-void function "motor_deal_with_ultrasonic_event"
+..\user\ul_fsm.c:   }
+..\user\ul_fsm.c:   ^
+..\user\ul_fsm.c(4107): warning:  #177-D: variable "rc" was declared but never referenced
+..\user\ul_fsm.c:       U8 rc = 0;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c: ..\user\ul_fsm.c: 88 warnings, 0 errors
+compiling math.c...
+..\user\math.c(108): warning:  #940-D: missing return statement at end of non-void function "ul_parse_xy_data"
+..\user\math.c:   }
+..\user\math.c:   ^
+..\user\math.c(245): warning:  #223-D: function "wheel_action_get_type" declared implicitly
+..\user\math.c:         if(wheel_action_get_type() == MACHINE_SL_FORWARD ){
+..\user\math.c:            ^
+..\user\math.c(247): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\math.c:                 walk_dist = wheel_action_get_walk_dist();
+..\user\math.c:                             ^
+..\user\math.c(453): warning:  #940-D: missing return statement at end of non-void function "ul_check_motor_current"
+..\user\math.c:   }
+..\user\math.c:   ^
+..\user\math.c(236): warning:  #177-D: variable "left_max_cur" was declared but never referenced
+..\user\math.c:         U16 left_max_cur, right_max_cur;
+..\user\math.c:             ^
+..\user\math.c(236): warning:  #177-D: variable "right_max_cur" was declared but never referenced
+..\user\math.c:         U16 left_max_cur, right_max_cur;
+..\user\math.c:                           ^
+..\user\math.c(476): warning:  #223-D: function "ultrasonic_get_last_record" declared implicitly
+..\user\math.c:                 ultrasonic_get_last_record(UL_TX_FRONT_LEFT_POW, left_dist, mid_left_dist);
+..\user\math.c:                 ^
+..\user\math.c(512): warning:  #223-D: function "ultrasonic_get_last_record" declared implicitly
+..\user\math.c:                 ultrasonic_get_last_record(UL_TX_FRONT_RIGHT_POW, mid_right_dist, right_dist);
+..\user\math.c:                 ^
+..\user\math.c(522): warning:  #940-D: missing return statement at end of non-void function "ul_get_distance_once"
+..\user\math.c:   }
+..\user\math.c:   ^
+..\user\math.c(559): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\math.c:                 walk_dist  = wheel_action_get_walk_dist();
+..\user\math.c:                              ^
+..\user\math.c(831): warning:  #223-D: function "wheel_action_check_yaw_offset" declared implicitly
+..\user\math.c:                                                 else if(wheel_action_check_yaw_offset()) {
+..\user\math.c:                                                         ^
+..\user\math.c(862): warning:  #111-D: statement is unreachable
+..\user\math.c:                                 goto out1;
+..\user\math.c:                                 ^
+..\user\math.c(885): warning:  #111-D: statement is unreachable
+..\user\math.c:                                 goto out1;
+..\user\math.c:                                 ^
+..\user\math.c(1090): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\math.c:                                                                         rc = wheel_action_get_finish_status();
+..\user\math.c:                                                                              ^
+..\user\math.c(1378): warning:  #940-D: missing return statement at end of non-void function "cornor_walking_yaw_check"
+..\user\math.c:   }
+..\user\math.c:   ^
+..\user\math.c(1401): warning:  #223-D: function "mpu_get_current_yaw" declared implicitly
+..\user\math.c:         mpu_get_current_yaw(&current_yaw);      
+..\user\math.c:         ^
+..\user\math.c(1394): warning:  #177-D: variable "total_dist" was declared but never referenced
+..\user\math.c:         U16 total_dist;
+..\user\math.c:             ^
+..\user\math.c(1656): warning:  #223-D: function "wheel_action_get_type" declared implicitly
+..\user\math.c:         if(wheel_action_get_type() != MACHINE_SL_FORWARD) {
+..\user\math.c:            ^
+..\user\math.c(1667): warning:  #223-D: function "ultrasonic_get_last_record" declared implicitly
+..\user\math.c:                 ultrasonic_get_last_record(UL_TX_FRONT_LEFT_POW, &left_dist, &mid_left_dist);
+..\user\math.c:                 ^
+..\user\math.c(1711): warning:  #223-D: function "ultrasonic_get_last_record" declared implicitly
+..\user\math.c:                 ultrasonic_get_last_record(UL_TX_FRONT_RIGHT_POW, &mid_right_dist, &right_dist);
+..\user\math.c:                 ^
+..\user\math.c(1862): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\math.c:                 walk_dist = wheel_action_get_walk_dist();
+..\user\math.c:                             ^
+..\user\math.c(1635): warning:  #177-D: variable "y_dist" was declared but never referenced
+..\user\math.c:         U32  y_dist;
+..\user\math.c:              ^
+..\user\math.c(1636): warning:  #177-D: variable "x_dist" was declared but never referenced
+..\user\math.c:         int x_dist;
+..\user\math.c:             ^
+..\user\math.c(1638): warning:  #177-D: variable "near_flag" was declared but never referenced
+..\user\math.c:         U8 near_flag;
+..\user\math.c:            ^
+..\user\math.c(1639): warning:  #177-D: variable "ob_position" was declared but never referenced
+..\user\math.c:         U8 ob_position = OB_POSITION_NONE;
+..\user\math.c:            ^
+..\user\math.c(1641): warning:  #177-D: variable "machine_opposite_position" was declared but never referenced
+..\user\math.c:         U8 machine_opposite_position = MACHINE_OPPOSITE_WARD_MID;
+..\user\math.c:            ^
+..\user\math.c(1642): warning:  #177-D: variable "ob_bitmap" was declared but never referenced
+..\user\math.c:         U8 ob_bitmap = 0;
+..\user\math.c:            ^
+..\user\math.c(1643): warning:  #177-D: variable "left_min" was declared but never referenced
+..\user\math.c:         U16 left_min = 0xffff, right_min = 0xffff, mid_min = 0xffff;
+..\user\math.c:             ^
+..\user\math.c(1643): warning:  #177-D: variable "right_min" was declared but never referenced
+..\user\math.c:         U16 left_min = 0xffff, right_min = 0xffff, mid_min = 0xffff;
+..\user\math.c:                                ^
+..\user\math.c(1643): warning:  #177-D: variable "mid_min" was declared but never referenced
+..\user\math.c:         U16 left_min = 0xffff, right_min = 0xffff, mid_min = 0xffff;
+..\user\math.c:                                                    ^
+..\user\math.c(1644): warning:  #177-D: variable "nearest_dist" was declared but never referenced
+..\user\math.c:         U16 nearest_dist = 0xffff;
+..\user\math.c:             ^
+..\user\math.c(1645): warning:  #177-D: variable "nearest_position" was declared but never referenced
+..\user\math.c:         U8 nearest_position = 0;
+..\user\math.c:            ^
+..\user\math.c(1646): warning:  #177-D: variable "need_adjust" was declared but never referenced
+..\user\math.c:         U8 need_adjust = 0;     
+..\user\math.c:            ^
+..\user\math.c(1647): warning:  #177-D: variable "adjust_forward" was declared but never referenced
+..\user\math.c:         U8 adjust_forward = 0;
+..\user\math.c:            ^
+..\user\math.c(1648): warning:  #177-D: variable "nearest_minim" was declared but never referenced
+..\user\math.c:         U8 nearest_minim = 0;
+..\user\math.c:            ^
+..\user\math.c(1650): warning:  #177-D: variable "left_cur" was declared but never referenced
+..\user\math.c:         U16 left_cur, right_cur;
+..\user\math.c:             ^
+..\user\math.c(1650): warning:  #177-D: variable "right_cur" was declared but never referenced
+..\user\math.c:         U16 left_cur, right_cur;
+..\user\math.c:                       ^
+..\user\math.c: ..\user\math.c: 37 warnings, 0 errors
+compiling pcf8563.c...
+..\user\pcf8563.c(42): warning:  #177-D: variable "rc" was declared but never referenced
+..\user\pcf8563.c:      U8 rc = 0;
+..\user\pcf8563.c:         ^
+..\user\pcf8563.c: ..\user\pcf8563.c: 1 warning, 0 errors
+compiling tm1637.c...
+..\user\tm1637.c(140): warning:  #177-D: variable "j" was declared but never referenced
+..\user\tm1637.c:   U8 j = 0;
+..\user\tm1637.c:      ^
+..\user\tm1637.c: ..\user\tm1637.c: 1 warning, 0 errors
+compiling inv_mpu.c...
+..\user\mpu\inv_mpu.c(803): warning:  #223-D: function "memset" declared implicitly
+..\user\mpu\inv_mpu.c:       memset(&st.chip_cfg.cache, 0, sizeof(st.chip_cfg.cache));
+..\user\mpu\inv_mpu.c:       ^
+..\user\mpu\inv_mpu.c(950): warning:  #223-D: function "stm_get_ms" declared implicitly
+..\user\mpu\inv_mpu.c:           get_ms(timestamp);
+..\user\mpu\inv_mpu.c:           ^
+..\user\mpu\inv_mpu.c(973): warning:  #223-D: function "stm_get_ms" declared implicitly
+..\user\mpu\inv_mpu.c:           get_ms(timestamp);
+..\user\mpu\inv_mpu.c:           ^
+..\user\mpu\inv_mpu.c(995): warning:  #223-D: function "stm_get_ms" declared implicitly
+..\user\mpu\inv_mpu.c:           get_ms(timestamp);
+..\user\mpu\inv_mpu.c:           ^
+..\user\mpu\inv_mpu.c(1705): warning:  #223-D: function "stm_get_ms" declared implicitly
+..\user\mpu\inv_mpu.c:       get_ms((unsigned long*)timestamp);
+..\user\mpu\inv_mpu.c:       ^
+..\user\mpu\inv_mpu.c(1898): warning:  #223-D: function "labs" declared implicitly
+..\user\mpu\inv_mpu.c:           st_shift_cust = labs(bias_regular[jj] - bias_st[jj]) / 65536.f;
+..\user\mpu\inv_mpu.c:                           ^
+..\user\mpu\inv_mpu.c(1925): warning:  #223-D: function "labs" declared implicitly
+..\user\mpu\inv_mpu.c:           st_shift_cust = labs(bias_regular[jj] - bias_st[jj]) / 65536.f;
+..\user\mpu\inv_mpu.c:                           ^
+..\user\mpu\inv_mpu.c(2336): warning:  #223-D: function "memcmp" declared implicitly
+..\user\mpu\inv_mpu.c:           if (memcmp(firmware+ii, cur, this_write)){
+..\user\mpu\inv_mpu.c:               ^
+..\user\mpu\inv_mpu.c: ..\user\mpu\inv_mpu.c: 8 warnings, 0 errors
+compiling mpu_i2c.c...
+..\user\mpu\mpu_i2c.c(235): warning:  #68-D: integer conversion resulted in a change of sign
+..\user\mpu\mpu_i2c.c:                  return MPU_FALSE;
+..\user\mpu\mpu_i2c.c:                         ^
+..\user\mpu\mpu_i2c.c(247): warning:  #68-D: integer conversion resulted in a change of sign
+..\user\mpu\mpu_i2c.c:                  return MPU_FALSE;
+..\user\mpu\mpu_i2c.c:                         ^
+..\user\mpu\mpu_i2c.c: ..\user\mpu\mpu_i2c.c: 2 warnings, 0 errors
+compiling mpu_main.c...
+..\user\mpu\mpu_main.c(238): warning:  #223-D: function "memset" declared implicitly
+..\user\mpu\mpu_main.c:         memset((U8 *)&mpu_buffer_data, 0, sizeof(mpu_buffer_data_t));
+..\user\mpu\mpu_main.c:         ^
+..\user\mpu\mpu_main.c(285): warning:  #167-D: argument of type "volatile float *" is incompatible with parameter of type "float *"
+..\user\mpu\mpu_main.c:                         mpu_get_data(&walk_dest_yaw, &walk_dest_roll, &walk_dest_pitch, 1); 
+..\user\mpu\mpu_main.c:                                      ^
+..\user\mpu\mpu_main.c(285): warning:  #167-D: argument of type "volatile float *" is incompatible with parameter of type "float *"
+..\user\mpu\mpu_main.c:                         mpu_get_data(&walk_dest_yaw, &walk_dest_roll, &walk_dest_pitch, 1); 
+..\user\mpu\mpu_main.c:                                                      ^
+..\user\mpu\mpu_main.c(285): warning:  #167-D: argument of type "volatile float *" is incompatible with parameter of type "float *"
+..\user\mpu\mpu_main.c:                         mpu_get_data(&walk_dest_yaw, &walk_dest_roll, &walk_dest_pitch, 1); 
+..\user\mpu\mpu_main.c:                                                                       ^
+..\user\mpu\mpu_main.c(302): warning:  #167-D: argument of type "volatile float *" is incompatible with parameter of type "float *"
+..\user\mpu\mpu_main.c:                         mpu_get_data(&walk_dest_yaw, &walk_dest_roll, &walk_dest_pitch, 1); 
+..\user\mpu\mpu_main.c:                                      ^
+..\user\mpu\mpu_main.c(302): warning:  #167-D: argument of type "volatile float *" is incompatible with parameter of type "float *"
+..\user\mpu\mpu_main.c:                         mpu_get_data(&walk_dest_yaw, &walk_dest_roll, &walk_dest_pitch, 1); 
+..\user\mpu\mpu_main.c:                                                      ^
+..\user\mpu\mpu_main.c(302): warning:  #167-D: argument of type "volatile float *" is incompatible with parameter of type "float *"
+..\user\mpu\mpu_main.c:                         mpu_get_data(&walk_dest_yaw, &walk_dest_roll, &walk_dest_pitch, 1); 
+..\user\mpu\mpu_main.c:                                                                       ^
+..\user\mpu\mpu_main.c(318): warning:  #167-D: argument of type "volatile float *" is incompatible with parameter of type "float *"
+..\user\mpu\mpu_main.c:                         mpu_get_data(&walk_dest_yaw, &walk_dest_roll, &walk_dest_pitch, 1); 
+..\user\mpu\mpu_main.c:                                      ^
+..\user\mpu\mpu_main.c(318): warning:  #167-D: argument of type "volatile float *" is incompatible with parameter of type "float *"
+..\user\mpu\mpu_main.c:                         mpu_get_data(&walk_dest_yaw, &walk_dest_roll, &walk_dest_pitch, 1); 
+..\user\mpu\mpu_main.c:                                                      ^
+..\user\mpu\mpu_main.c(318): warning:  #167-D: argument of type "volatile float *" is incompatible with parameter of type "float *"
+..\user\mpu\mpu_main.c:                         mpu_get_data(&walk_dest_yaw, &walk_dest_roll, &walk_dest_pitch, 1); 
+..\user\mpu\mpu_main.c:                                                                       ^
+..\user\mpu\mpu_main.c(434): warning:  #223-D: function "wheel_action_get_type" declared implicitly
+..\user\mpu\mpu_main.c:                 if((wheel_action_get_type() != MACHINE_BACKWARD) && (ultrasonic_global_event!=OB_POSITION_BOUNDARY) )
+..\user\mpu\mpu_main.c:                     ^
+..\user\mpu\mpu_main.c(619): warning:  #940-D: missing return statement at end of non-void function "mpu_get_xyz_offset"
+..\user\mpu\mpu_main.c:   }
+..\user\mpu\mpu_main.c:   ^
+..\user\mpu\mpu_main.c(499): warning:  #177-D: variable "yawu" was declared but never referenced
+..\user\mpu\mpu_main.c:          U32 yawu, rollu, pitchu;
+..\user\mpu\mpu_main.c:              ^
+..\user\mpu\mpu_main.c(499): warning:  #177-D: variable "rollu" was declared but never referenced
+..\user\mpu\mpu_main.c:          U32 yawu, rollu, pitchu;
+..\user\mpu\mpu_main.c:                    ^
+..\user\mpu\mpu_main.c(499): warning:  #177-D: variable "pitchu" was declared but never referenced
+..\user\mpu\mpu_main.c:          U32 yawu, rollu, pitchu;
+..\user\mpu\mpu_main.c:                           ^
+..\user\mpu\mpu_main.c(500): warning:  #177-D: variable "fsr" was declared but never referenced
+..\user\mpu\mpu_main.c:          U8 fsr;
+..\user\mpu\mpu_main.c:             ^
+..\user\mpu\mpu_main.c(501): warning:  #177-D: variable "left_cur" was declared but never referenced
+..\user\mpu\mpu_main.c:         U16 left_cur, right_cur;
+..\user\mpu\mpu_main.c:             ^
+..\user\mpu\mpu_main.c(501): warning:  #177-D: variable "right_cur" was declared but never referenced
+..\user\mpu\mpu_main.c:         U16 left_cur, right_cur;
+..\user\mpu\mpu_main.c:                       ^
+..\user\mpu\mpu_main.c(502): warning:  #177-D: variable "left_speed" was declared but never referenced
+..\user\mpu\mpu_main.c:         U16 left_speed, right_speed;
+..\user\mpu\mpu_main.c:             ^
+..\user\mpu\mpu_main.c(502): warning:  #177-D: variable "right_speed" was declared but never referenced
+..\user\mpu\mpu_main.c:         U16 left_speed, right_speed;
+..\user\mpu\mpu_main.c:                         ^
+..\user\mpu\mpu_main.c(503): warning:  #177-D: variable "xg" was declared but never referenced
+..\user\mpu\mpu_main.c:         float xg, yg,zg;        
+..\user\mpu\mpu_main.c:               ^
+..\user\mpu\mpu_main.c(503): warning:  #177-D: variable "yg" was declared but never referenced
+..\user\mpu\mpu_main.c:         float xg, yg,zg;        
+..\user\mpu\mpu_main.c:                   ^
+..\user\mpu\mpu_main.c(503): warning:  #177-D: variable "zg" was declared but never referenced
+..\user\mpu\mpu_main.c:         float xg, yg,zg;        
+..\user\mpu\mpu_main.c:                      ^
+..\user\mpu\mpu_main.c(664): warning:  #223-D: function "wheel_action_get_type" declared implicitly
+..\user\mpu\mpu_main.c:         }else  if(ultrasonic_global_event == OB_POSITION_NONE && wheel_action_get_type() == MACHINE_SL_FORWARD ){
+..\user\mpu\mpu_main.c:                                                                  ^
+..\user\mpu\mpu_main.c(730): warning:  #940-D: missing return statement at end of non-void function "mpu_check_climb"
+..\user\mpu\mpu_main.c:   }
+..\user\mpu\mpu_main.c:   ^
+..\user\mpu\mpu_main.c(786): warning:  #223-D: function "wheel_action_get_type" declared implicitly
+..\user\mpu\mpu_main.c:                 if(ultrasonic_global_event == OB_POSITION_NONE &&wheel_action_get_type() == MACHINE_SL_FORWARD)
+..\user\mpu\mpu_main.c:                                                                  ^
+..\user\mpu\mpu_main.c(737): warning:  #177-D: variable "yawu" was declared but never referenced
+..\user\mpu\mpu_main.c:          U32 yawu, rollu, pitchu;
+..\user\mpu\mpu_main.c:              ^
+..\user\mpu\mpu_main.c(737): warning:  #177-D: variable "rollu" was declared but never referenced
+..\user\mpu\mpu_main.c:          U32 yawu, rollu, pitchu;
+..\user\mpu\mpu_main.c:                    ^
+..\user\mpu\mpu_main.c(737): warning:  #177-D: variable "pitchu" was declared but never referenced
+..\user\mpu\mpu_main.c:          U32 yawu, rollu, pitchu;
+..\user\mpu\mpu_main.c:                           ^
+..\user\mpu\mpu_main.c(738): warning:  #177-D: variable "fsr" was declared but never referenced
+..\user\mpu\mpu_main.c:          U8 fsr;
+..\user\mpu\mpu_main.c:             ^
+..\user\mpu\mpu_main.c(739): warning:  #177-D: variable "left_cur" was declared but never referenced
+..\user\mpu\mpu_main.c:         U16 left_cur, right_cur;
+..\user\mpu\mpu_main.c:             ^
+..\user\mpu\mpu_main.c(739): warning:  #177-D: variable "right_cur" was declared but never referenced
+..\user\mpu\mpu_main.c:         U16 left_cur, right_cur;
+..\user\mpu\mpu_main.c:                       ^
+..\user\mpu\mpu_main.c(740): warning:  #177-D: variable "left_speed" was declared but never referenced
+..\user\mpu\mpu_main.c:         U16 left_speed, right_speed;
+..\user\mpu\mpu_main.c:             ^
+..\user\mpu\mpu_main.c(740): warning:  #177-D: variable "right_speed" was declared but never referenced
+..\user\mpu\mpu_main.c:         U16 left_speed, right_speed;
+..\user\mpu\mpu_main.c:                         ^
+..\user\mpu\mpu_main.c(744): warning:  #550-D: variable "dvx" was set but never used
+..\user\mpu\mpu_main.c:         float dvx,dvy,dvz;
+..\user\mpu\mpu_main.c:               ^
+..\user\mpu\mpu_main.c(744): warning:  #550-D: variable "dvz" was set but never used
+..\user\mpu\mpu_main.c:         float dvx,dvy,dvz;
+..\user\mpu\mpu_main.c:                       ^
+..\user\mpu\mpu_main.c(745): warning:  #177-D: variable "walk_dist" was declared but never referenced
+..\user\mpu\mpu_main.c:         U16 walk_dist;
+..\user\mpu\mpu_main.c:             ^
+..\user\mpu\mpu_main.c(1131): warning:  #223-D: function "dma_mem_reset" declared implicitly
+..\user\mpu\mpu_main.c:                   dma_mem_reset(&motor_global_setting);
+..\user\mpu\mpu_main.c:                   ^
+..\user\mpu\mpu_main.c(885): warning:  #177-D: variable "count" was declared but never referenced
+..\user\mpu\mpu_main.c:         U16 count = 0;
+..\user\mpu\mpu_main.c:             ^
+..\user\mpu\mpu_main.c(886): warning:  #177-D: variable "acc_x" was declared but never referenced
+..\user\mpu\mpu_main.c:         int acc_x = 0, acc_y = 0, acc_z = 0;
+..\user\mpu\mpu_main.c:             ^
+..\user\mpu\mpu_main.c(886): warning:  #177-D: variable "acc_y" was declared but never referenced
+..\user\mpu\mpu_main.c:         int acc_x = 0, acc_y = 0, acc_z = 0;
+..\user\mpu\mpu_main.c:                        ^
+..\user\mpu\mpu_main.c(886): warning:  #177-D: variable "acc_z" was declared but never referenced
+..\user\mpu\mpu_main.c:         int acc_x = 0, acc_y = 0, acc_z = 0;
+..\user\mpu\mpu_main.c:                                   ^
+..\user\mpu\mpu_main.c(1155): warning:  #223-D: function "wheel_action_get_type" declared implicitly
+..\user\mpu\mpu_main.c:         if(wheel_action_get_type() != MACHINE_SL_FORWARD) {
+..\user\mpu\mpu_main.c:            ^
+..\user\mpu\mpu_main.c(1166): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\mpu\mpu_main.c:         dist = wheel_action_get_walk_dist();
+..\user\mpu\mpu_main.c:                ^
+..\user\mpu\mpu_main.c(744): warning: C3017W: dvy may be used before being set
+..\user\mpu\mpu_main.c:         float dvx,dvy,dvz;
+..\user\mpu\mpu_main.c:            ^
+..\user\mpu\mpu_main.c(888): warning: C3017W: i may be used before being set
+..\user\mpu\mpu_main.c:         U8 i;
+..\user\mpu\mpu_main.c:     ^
+..\user\mpu\mpu_main.c: ..\user\mpu\mpu_main.c: 46 warnings, 0 errors
+compiling mpu_displacement.c...
+..\user\mpu\mpu_displacement.c(205): warning:  #223-D: function "memset" declared implicitly
+..\user\mpu\mpu_displacement.c:         memset(float_string,0,90);
+..\user\mpu\mpu_displacement.c:         ^
+..\user\mpu\mpu_displacement.c(206): warning:  #223-D: function "sprintf" declared implicitly
+..\user\mpu\mpu_displacement.c:         sprintf(float_string, "new speed:       %f      %f      %f\r\n", NewSpeed[0],NewSpeed[1],NewSpeed[2]);
+..\user\mpu\mpu_displacement.c:         ^
+..\user\mpu\mpu_displacement.c: ..\user\mpu\mpu_displacement.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=78350 RO-data=3874 RW-data=1196 ZI-data=13460  
+FromELF: creating hex file...
+".\Obj\STM32_Flash.axf" - 0 Error(s), 327 Warning(s).
+Build target 'BOOT_FLASH'
+compiling stm32f10x_it.c...
+..\startup\stm32f10x_it.c(739): warning:  #223-D: function "ultrasonic_tx_interrupt_enable" declared implicitly
+..\startup\stm32f10x_it.c:                      ultrasonic_tx_interrupt_enable(UL_TX_MID_POW, DISABLE);
+..\startup\stm32f10x_it.c:                      ^
+..\startup\stm32f10x_it.c(740): warning:  #223-D: function "ultrasonic_tx_emit" declared implicitly
+..\startup\stm32f10x_it.c:                      ultrasonic_tx_emit(UL_TX_MID_POW, DISABLE);
+..\startup\stm32f10x_it.c:                      ^
+..\startup\stm32f10x_it.c: ..\startup\stm32f10x_it.c: 2 warnings, 0 errors
+compiling stm32f10x_target.c...
+compiling stm32f10x_rtc.c...
+compiling uart.c...
+compiling main.c...
+compiling create_task.c...
+compiling core_task.c...
+compiling malloc.c...
+compiling detect.c...
+compiling rf.c...
+..\user\rf.c(110): warning:  #177-D: variable "i" was declared but never referenced
+..\user\rf.c:           U8 i;
+..\user\rf.c:              ^
+..\user\rf.c(196): warning:  #177-D: variable "battery_voltage" was declared but never referenced
+..\user\rf.c:           U16 battery_voltage;
+..\user\rf.c:               ^
+..\user\rf.c(404): warning:  #111-D: statement is unreachable
+..\user\rf.c:           return KEY_NULL;
+..\user\rf.c:           ^
+..\user\rf.c(701): warning:  #550-D: variable "rc" was set but never used
+..\user\rf.c:           int rc;
+..\user\rf.c:               ^
+..\user\rf.c(742): warning:  #177-D: variable "rc" was declared but never referenced
+..\user\rf.c:           int rc;
+..\user\rf.c:               ^
+..\user\rf.c(1272): warning:  #223-D: function "Schedule_configure_write" declared implicitly
+..\user\rf.c:           Schedule_configure_write(&machine_save_config.schedule_save);
+..\user\rf.c:           ^
+..\user\rf.c(1277): warning:  #940-D: missing return statement at end of non-void function "deal_with_schedule_ok_key"
+..\user\rf.c:   }
+..\user\rf.c:   ^
+..\user\rf.c(1283): warning:  #177-D: variable "i" was declared but never referenced
+..\user\rf.c:           U8 i;
+..\user\rf.c:              ^
+..\user\rf.c(1425): warning:  #223-D: function "show_mop" declared implicitly
+..\user\rf.c:           show_mop(global_setting.mop_mode);
+..\user\rf.c:           ^
+..\user\rf.c(2174): warning:  #223-D: function "wifi_stored_read" declared implicitly
+..\user\rf.c:           wifi_stored_read();
+..\user\rf.c:           ^
+..\user\rf.c(2145): warning:  #177-D: variable "i" was declared but never referenced
+..\user\rf.c:           U8 i = 0;  
+..\user\rf.c:              ^
+..\user\rf.c: ..\user\rf.c: 11 warnings, 0 errors
+compiling display.c...
+..\user\display.c(238): warning:  #177-D: variable "j" was declared but never referenced
+..\user\display.c:      U8 j ;
+..\user\display.c:         ^
+..\user\display.c: ..\user\display.c: 1 warning, 0 errors
+compiling motor.c...
+..\user\motor.c(21): warning:  #223-D: function "wheel_action_get_type" declared implicitly
+..\user\motor.c:        if(wheel_action_get_type() == MACHINE_BACKWARD) {
+..\user\motor.c:           ^
+..\user\motor.c: ..\user\motor.c: 1 warning, 0 errors
+compiling tr24b.c...
+compiling rtc.c...
+compiling clean_flash.c...
+compiling motor_control.c...
+..\user\motor_control.c(193): warning:  #177-D: variable "demo_changed" was declared but never referenced
+..\user\motor_control.c:        U8 demo_changed = 0;
+..\user\motor_control.c:           ^
+..\user\motor_control.c(303): warning:  #177-D: label "netx" was declared but never referenced
+..\user\motor_control.c:   netx:
+..\user\motor_control.c:   ^
+..\user\motor_control.c: ..\user\motor_control.c: 2 warnings, 0 errors
+compiling motor_action.c...
+..\user\motor_action.c(348): warning:  #223-D: function "wheel_status_init" declared implicitly
+..\user\motor_action.c:         wheel_status_init();
+..\user\motor_action.c:         ^
+..\user\motor_action.c(452): warning:  #223-D: function "wheel_status_init" declared implicitly
+..\user\motor_action.c:         wheel_status_init();
+..\user\motor_action.c:         ^
+..\user\motor_action.c(512): warning:  #223-D: function "wheel_action_wait_finish" declared implicitly
+..\user\motor_action.c:                 wheel_action_wait_finish();
+..\user\motor_action.c:                 ^
+..\user\motor_action.c(559): warning:  #223-D: function "wheel_status_init" declared implicitly
+..\user\motor_action.c:         wheel_status_init();
+..\user\motor_action.c:         ^
+..\user\motor_action.c(616): warning:  #223-D: function "wheel_action_wait_finish" declared implicitly
+..\user\motor_action.c:                 wheel_action_wait_finish();
+..\user\motor_action.c:                 ^
+..\user\motor_action.c(670): warning:  #223-D: function "wheel_status_init" declared implicitly
+..\user\motor_action.c:         wheel_status_init();    
+..\user\motor_action.c:         ^
+..\user\motor_action.c(735): warning:  #223-D: function "wheel_action_wait_finish" declared implicitly
+..\user\motor_action.c:                 wheel_action_wait_finish();
+..\user\motor_action.c:                 ^
+..\user\motor_action.c(788): warning:  #223-D: function "wheel_status_init" declared implicitly
+..\user\motor_action.c:         wheel_status_init();
+..\user\motor_action.c:         ^
+..\user\motor_action.c(883): warning:  #223-D: function "wheel_action_wait_finish" declared implicitly
+..\user\motor_action.c:                 wheel_action_wait_finish();
+..\user\motor_action.c:                 ^
+..\user\motor_action.c: ..\user\motor_action.c: 9 warnings, 0 errors
+compiling motor_hal.c...
+..\user\motor_hal.c(24): warning:  #177-D: variable "now_int_finish" was declared but never referenced
+..\user\motor_hal.c:    U32 now_int_finish = 0;
+..\user\motor_hal.c:        ^
+..\user\motor_hal.c(63): warning:  #177-D: variable "now_int_finish" was declared but never referenced
+..\user\motor_hal.c:    U32 now_int_finish = 0;
+..\user\motor_hal.c:        ^
+..\user\motor_hal.c(111): warning:  #177-D: variable "now_int_finish" was declared but never referenced
+..\user\motor_hal.c:    U32 now_int_finish = 0;
+..\user\motor_hal.c:        ^
+..\user\motor_hal.c(143): warning:  #177-D: variable "now_int_finish" was declared but never referenced
+..\user\motor_hal.c:    U32 now_int_finish = 0;
+..\user\motor_hal.c:        ^
+..\user\motor_hal.c: ..\user\motor_hal.c: 4 warnings, 0 errors
+compiling motor_ir_detect.c...
+..\user\motor_ir_detect.c(181): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\motor_ir_detect.c:      while(wheel_action_get_finish_status() == 0 ) {
+..\user\motor_ir_detect.c:            ^
+..\user\motor_ir_detect.c(250): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\motor_ir_detect.c:      while(wheel_action_get_finish_status() == 0) {
+..\user\motor_ir_detect.c:            ^
+..\user\motor_ir_detect.c(237): warning:  #177-D: variable "top_ir" was declared but never referenced
+..\user\motor_ir_detect.c:      U16 top_ir=0,mid_ir=0,left_ir=0,right_ir=0;
+..\user\motor_ir_detect.c:          ^
+..\user\motor_ir_detect.c(237): warning:  #177-D: variable "mid_ir" was declared but never referenced
+..\user\motor_ir_detect.c:      U16 top_ir=0,mid_ir=0,left_ir=0,right_ir=0;
+..\user\motor_ir_detect.c:                   ^
+..\user\motor_ir_detect.c(237): warning:  #177-D: variable "left_ir" was declared but never referenced
+..\user\motor_ir_detect.c:      U16 top_ir=0,mid_ir=0,left_ir=0,right_ir=0;
+..\user\motor_ir_detect.c:                            ^
+..\user\motor_ir_detect.c(237): warning:  #177-D: variable "right_ir" was declared but never referenced
+..\user\motor_ir_detect.c:      U16 top_ir=0,mid_ir=0,left_ir=0,right_ir=0;
+..\user\motor_ir_detect.c:                                      ^
+..\user\motor_ir_detect.c(403): warning:  #223-D: function "mpu_get_current_yaw" declared implicitly
+..\user\motor_ir_detect.c:                      start_yaw = mpu_get_current_yaw(&start_yaw);
+..\user\motor_ir_detect.c:                                  ^
+..\user\motor_ir_detect.c(409): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\motor_ir_detect.c:                      while(wheel_action_get_finish_status() == 0) {
+..\user\motor_ir_detect.c:                            ^
+..\user\motor_ir_detect.c(818): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\motor_ir_detect.c:                                      while(wheel_action_get_finish_status() == 0) {
+..\user\motor_ir_detect.c:                                            ^
+..\user\motor_ir_detect.c(325): warning:  #177-D: variable "arc" was declared but never referenced
+..\user\motor_ir_detect.c:      U8 arc;
+..\user\motor_ir_detect.c:         ^
+..\user\motor_ir_detect.c: ..\user\motor_ir_detect.c: 10 warnings, 0 errors
+compiling motor_power.c...
+..\user\motor_power.c(49): warning:  #111-D: statement is unreachable
+..\user\motor_power.c:          return 0;
+..\user\motor_power.c:          ^
+..\user\motor_power.c(68): warning:  #111-D: statement is unreachable
+..\user\motor_power.c:          return 0;
+..\user\motor_power.c:          ^
+..\user\motor_power.c(75): warning:  #550-D: variable "wifi_week" was set but never used
+..\user\motor_power.c:          U8 wifi_week = 0;
+..\user\motor_power.c:             ^
+..\user\motor_power.c(76): warning:  #177-D: variable "p" was declared but never referenced
+..\user\motor_power.c:          struct stored_schedule_config *p=(struct stored_schedule_config *)ScheduleStartAddr;
+..\user\motor_power.c:                                         ^
+..\user\motor_power.c(166): warning:  #177-D: variable "charging_status" was declared but never referenced
+..\user\motor_power.c:          U8 charging_status;
+..\user\motor_power.c:             ^
+..\user\motor_power.c(167): warning:  #177-D: variable "charging_done" was declared but never referenced
+..\user\motor_power.c:          U8 charging_done;
+..\user\motor_power.c:             ^
+..\user\motor_power.c(222): warning: C3017W: battery_voltage may be used before being set
+..\user\motor_power.c:  U16     battery_voltage ;
+..\user\motor_power.c:      ^
+..\user\motor_power.c: ..\user\motor_power.c: 7 warnings, 0 errors
+compiling motor_run_fsm.c...
+..\user\motor_run_fsm.c(244): warning:  #223-D: function "mpu_get_current_yaw" declared implicitly
+..\user\motor_run_fsm.c:                                mpu_get_current_yaw(&yaw);
+..\user\motor_run_fsm.c:                                ^
+..\user\motor_run_fsm.c(48): warning:  #177-D: variable "left_dist" was declared but never referenced
+..\user\motor_run_fsm.c:        U16 left_dist, right_dist;
+..\user\motor_run_fsm.c:            ^
+..\user\motor_run_fsm.c(48): warning:  #177-D: variable "right_dist" was declared but never referenced
+..\user\motor_run_fsm.c:        U16 left_dist, right_dist;
+..\user\motor_run_fsm.c:                       ^
+..\user\motor_run_fsm.c(49): warning:  #177-D: variable "finish_dist" was declared but never referenced
+..\user\motor_run_fsm.c:        U16 finish_dist;
+..\user\motor_run_fsm.c:            ^
+..\user\motor_run_fsm.c(51): warning:  #177-D: variable "dist" was declared but never referenced
+..\user\motor_run_fsm.c:        U16 dist = 0;
+..\user\motor_run_fsm.c:            ^
+..\user\motor_run_fsm.c(52): warning:  #177-D: variable "adjust_flag" was declared but never referenced
+..\user\motor_run_fsm.c:        U8 adjust_flag = 0;
+..\user\motor_run_fsm.c:           ^
+..\user\motor_run_fsm.c(53): warning:  #177-D: variable "rc" was declared but never referenced
+..\user\motor_run_fsm.c:        U8 rc = 0;
+..\user\motor_run_fsm.c:           ^
+..\user\motor_run_fsm.c(377): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\motor_run_fsm.c:        walk_dist = wheel_action_get_walk_dist();
+..\user\motor_run_fsm.c:                    ^
+..\user\motor_run_fsm.c(371): warning:  #177-D: variable "now_time" was declared but never referenced
+..\user\motor_run_fsm.c:        U32 now_time = 0;
+..\user\motor_run_fsm.c:            ^
+..\user\motor_run_fsm.c(460): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\motor_run_fsm.c:        walk_dist = wheel_action_get_walk_dist();
+..\user\motor_run_fsm.c:                    ^
+..\user\motor_run_fsm.c(547): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\motor_run_fsm.c:        walk_dist = wheel_action_get_walk_dist();
+..\user\motor_run_fsm.c:                    ^
+..\user\motor_run_fsm.c(643): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\motor_run_fsm.c:        while(wheel_action_get_finish_status() == 0){
+..\user\motor_run_fsm.c:              ^
+..\user\motor_run_fsm.c(612): warning:  #177-D: variable "i" was declared but never referenced
+..\user\motor_run_fsm.c:        U8 i;
+..\user\motor_run_fsm.c:           ^
+..\user\motor_run_fsm.c(613): warning:  #177-D: variable "back_side_out" was declared but never referenced
+..\user\motor_run_fsm.c:        U8 back_side_out  = 0;
+..\user\motor_run_fsm.c:           ^
+..\user\motor_run_fsm.c(751): warning:  #223-D: function "wheel_action_get_type" declared implicitly
+..\user\motor_run_fsm.c:        if(wheel_action_get_type() == MACHINE_BACKWARD){
+..\user\motor_run_fsm.c:           ^
+..\user\motor_run_fsm.c(727): warning:  #177-D: variable "arg" was declared but never referenced
+..\user\motor_run_fsm.c:        U8 arg;
+..\user\motor_run_fsm.c:           ^
+..\user\motor_run_fsm.c(729): warning:  #177-D: variable "back_r_delta" was declared but never referenced
+..\user\motor_run_fsm.c:        U16 back_r_delta, back_l_delta;
+..\user\motor_run_fsm.c:            ^
+..\user\motor_run_fsm.c(729): warning:  #177-D: variable "back_l_delta" was declared but never referenced
+..\user\motor_run_fsm.c:        U16 back_r_delta, back_l_delta;
+..\user\motor_run_fsm.c:                          ^
+..\user\motor_run_fsm.c(731): warning:  #177-D: variable "re_detect" was declared but never referenced
+..\user\motor_run_fsm.c:        U8 re_detect = 0;
+..\user\motor_run_fsm.c:           ^
+..\user\motor_run_fsm.c(39): warning:  #177-D: function "robot_move_status" was declared but never referenced
+..\user\motor_run_fsm.c:   static void robot_move_status(u8 status_now){
+..\user\motor_run_fsm.c:               ^
+..\user\motor_run_fsm.c: ..\user\motor_run_fsm.c: 20 warnings, 0 errors
+compiling motor_security.c...
+..\user\motor_security.c(19): warning:  #177-D: variable "dustbin_status" was declared but never referenced
+..\user\motor_security.c:       U8 dustbin_status = 0;
+..\user\motor_security.c:          ^
+..\user\motor_security.c(20): warning:  #177-D: variable "dustbin_is_full" was declared but never referenced
+..\user\motor_security.c:       U8 dustbin_is_full = 0;
+..\user\motor_security.c:          ^
+..\user\motor_security.c(21): warning:  #177-D: variable "i" was declared but never referenced
+..\user\motor_security.c:       U8 i;
+..\user\motor_security.c:          ^
+..\user\motor_security.c(62): warning:  #223-D: function "side_motor_get_threashold" declared implicitly
+..\user\motor_security.c:       side_motor_overflow = side_motor_get_threashold();
+..\user\motor_security.c:                             ^
+..\user\motor_security.c(178): warning:  #223-D: function "side_motor_get_threashold" declared implicitly
+..\user\motor_security.c:       side_motor_overflow = side_motor_get_threashold();
+..\user\motor_security.c:                             ^
+..\user\motor_security.c(481): warning:  #223-D: function "wheel_action_get_type" declared implicitly
+..\user\motor_security.c:       if(wheel_action_get_type()== MACHINE_STOP || wheel_action_get_type() == MACHINE_BACKWARD){
+..\user\motor_security.c:          ^
+..\user\motor_security.c(813): warning:  #177-D: variable "left_current" was declared but never referenced
+..\user\motor_security.c:       U16 left_current, right_current;
+..\user\motor_security.c:           ^
+..\user\motor_security.c(813): warning:  #177-D: variable "right_current" was declared but never referenced
+..\user\motor_security.c:       U16 left_current, right_current;
+..\user\motor_security.c:                         ^
+..\user\motor_security.c: ..\user\motor_security.c: 8 warnings, 0 errors
+compiling motor_timeout.c...
+..\user\motor_timeout.c(20): warning:  #550-D: variable "last_index" was set but never used
+..\user\motor_timeout.c:        U8 last_index = 0;
+..\user\motor_timeout.c:           ^
+..\user\motor_timeout.c: ..\user\motor_timeout.c: 1 warning, 0 errors
+compiling motor_task.c...
+..\user\motor_task.c(605): warning:  #223-D: function "show_demo_flag" declared implicitly
+..\user\motor_task.c:           show_demo_flag(0);
+..\user\motor_task.c:           ^
+..\user\motor_task.c(505): warning:  #177-D: variable "delta_time" was declared but never referenced
+..\user\motor_task.c:           U32 delta_time = 0;
+..\user\motor_task.c:               ^
+..\user\motor_task.c(625): warning:  #177-D: variable "tl" was declared but never referenced
+..\user\motor_task.c:           task_list_t *tl = NULL;
+..\user\motor_task.c:                        ^
+..\user\motor_task.c(286): warning: C3017W: tl may be used before being set
+..\user\motor_task.c:   task_list_t *tl;
+..\user\motor_task.c:               ^
+..\user\motor_task.c: ..\user\motor_task.c: 4 warnings, 0 errors
+compiling kdebug.c...
+compiling voice.c...
+compiling hoover_disp.c...
+..\user\hoover_disp.c(1100): warning:  #177-D: variable "nib" was declared but never referenced
+..\user\hoover_disp.c:          U8 ten,nib;
+..\user\hoover_disp.c:                 ^
+..\user\hoover_disp.c(1502): warning:  #177-D: variable "i" was declared but never referenced
+..\user\hoover_disp.c:          U8 i = 0;
+..\user\hoover_disp.c:             ^
+..\user\hoover_disp.c(1650): warning:  #177-D: variable "i" was declared but never referenced
+..\user\hoover_disp.c:          U8 i;
+..\user\hoover_disp.c:             ^
+..\user\hoover_disp.c: ..\user\hoover_disp.c: 3 warnings, 0 errors
+compiling a7105.c...
+..\user\a7105.c(525): warning:  #550-D: variable "fb" was set but never used
+..\user\a7105.c:        U8 fb,fbcf;
+..\user\a7105.c:           ^
+..\user\a7105.c(526): warning:  #550-D: variable "dvt1" was set but never used
+..\user\a7105.c:        U8 vb1,vbcf1,dvt1;
+..\user\a7105.c:                     ^
+..\user\a7105.c(527): warning:  #550-D: variable "dvt2" was set but never used
+..\user\a7105.c:        U8 vb2,vbcf2,dvt2;
+..\user\a7105.c:                     ^
+..\user\a7105.c: ..\user\a7105.c: 3 warnings, 0 errors
+compiling lcm.c...
+..\user\lcm.c(28): warning:  #177-D: variable "current_day" was declared but never referenced
+..\user\lcm.c:          U8 current_day = 0;
+..\user\lcm.c:             ^
+..\user\lcm.c(328): warning:  #550-D: variable "charge_show" was set but never used
+..\user\lcm.c:          U8 charge_show = 0;
+..\user\lcm.c:             ^
+..\user\lcm.c(334): warning:  #177-D: variable "t_i" was declared but never referenced
+..\user\lcm.c:          U8 *t_i =NULL ;
+..\user\lcm.c:              ^
+..\user\lcm.c(346): warning:  #550-D: variable "wifi_week" was set but never used
+..\user\lcm.c:          U8 wifi_week = 0;
+..\user\lcm.c:             ^
+..\user\lcm.c: ..\user\lcm.c: 4 warnings, 0 errors
+compiling wifi_command.c...
+..\user\wifi_command.c(71): warning:  #223-D: function "memcpy" declared implicitly
+..\user\wifi_command.c:         memcpy(&save_times,times_def,sizeof(struct stored_times_t));
+..\user\wifi_command.c:         ^
+..\user\wifi_command.c(64): warning:  #177-D: variable "EraseCounter" was declared but never referenced
+..\user\wifi_command.c:         u32 EraseCounter = 0x00, Address = 0x00;
+..\user\wifi_command.c:             ^
+..\user\wifi_command.c(124): warning:  #223-D: function "memcpy" declared implicitly
+..\user\wifi_command.c:         memcpy(&save,times_def,sizeof(struct stored_schedule_config));
+..\user\wifi_command.c:         ^
+..\user\wifi_command.c: ..\user\wifi_command.c: 3 warnings, 0 errors
+compiling wifi.c...
+..\user\wifi.c(317): warning:  #14-D: extra text after expected end of preprocessing directive
+..\user\wifi.c:   #else{
+..\user\wifi.c:        ^
+..\user\wifi.c: ..\user\wifi.c: 1 warning, 0 errors
+compiling ultrasonic.c...
+..\user\ultrasonic.c(280): warning:  #550-D: variable "last_item" was set but never used
+..\user\ultrasonic.c:           ultrasonic_mid_record_item_t *last_item;
+..\user\ultrasonic.c:                                         ^
+..\user\ultrasonic.c(411): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                           GPIO_WriteBit(GPIOE, GPIO_Pin_11, en);
+..\user\ultrasonic.c:                                                             ^
+..\user\ultrasonic.c(416): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                           GPIO_WriteBit(GPIOB, GPIO_Pin_10, en);
+..\user\ultrasonic.c:                                                             ^
+..\user\ultrasonic.c(420): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                           GPIO_WriteBit(GPIOD, GPIO_Pin_4, en);
+..\user\ultrasonic.c:                                                            ^
+..\user\ultrasonic.c(425): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                           GPIO_WriteBit(GPIOD, GPIO_Pin_10, en);
+..\user\ultrasonic.c:                                                             ^
+..\user\ultrasonic.c(592): warning:  #177-D: variable "TIM1_OCInitStructure" was declared but never referenced
+..\user\ultrasonic.c:           TIM1_OCInitTypeDef  TIM1_OCInitStructure;
+..\user\ultrasonic.c:                               ^
+..\user\ultrasonic.c(709): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                   TIM_ITConfig(TIM2, TIM_IT_CC2, enable);  //打开中断
+..\user\ultrasonic.c:                                                  ^
+..\user\ultrasonic.c(710): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                   TIM_ITConfig(TIM2, TIM_IT_CC4, enable);  //打开中断
+..\user\ultrasonic.c:                                                  ^
+..\user\ultrasonic.c(738): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                   TIM_ITConfig(TIM2, TIM_IT_CC1, enable);  //打开中断
+..\user\ultrasonic.c:                                                  ^
+..\user\ultrasonic.c(739): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                   TIM_ITConfig(TIM2, TIM_IT_CC4, enable);  //打开中断
+..\user\ultrasonic.c:                                                  ^
+..\user\ultrasonic.c(757): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                   TIM_ITConfig(TIM2, TIM_IT_CC1, enable);  //打开中断
+..\user\ultrasonic.c:                                                  ^
+..\user\ultrasonic.c(784): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                   TIM_ITConfig(TIM2, TIM_IT_CC2, enable);  //打开中断
+..\user\ultrasonic.c:                                                  ^
+..\user\ultrasonic.c(640): warning:  #177-D: variable "GPIO_InitStructure" was declared but never referenced
+..\user\ultrasonic.c:           GPIO_InitTypeDef GPIO_InitStructure;
+..\user\ultrasonic.c:                            ^
+..\user\ultrasonic.c(837): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                   TIM_ITConfig(TIM2, TIM_IT_CC3, enable);  //打开中断
+..\user\ultrasonic.c:                                                  ^
+..\user\ultrasonic.c(838): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                   TIM_ITConfig(TIM2, TIM_IT_CC4, enable);  //打开中断
+..\user\ultrasonic.c:                                                  ^
+..\user\ultrasonic.c(851): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                   TIM_ITConfig(TIM2, TIM_IT_CC2, enable);  //打开中断
+..\user\ultrasonic.c:                                                  ^
+..\user\ultrasonic.c(862): warning:  #188-D: enumerated type mixed with another type
+..\user\ultrasonic.c:                   TIM_ITConfig(TIM2, TIM_IT_CC1, enable);  //打开中断
+..\user\ultrasonic.c:                                                  ^
+..\user\ultrasonic.c(873): warning:  #177-D: variable "TIM1_OCInitStructure" was declared but never referenced
+..\user\ultrasonic.c:           TIM1_OCInitTypeDef  TIM1_OCInitStructure;
+..\user\ultrasonic.c:                               ^
+..\user\ultrasonic.c(900): warning:  #177-D: variable "TIM1_TimeBaseStructure" was declared but never referenced
+..\user\ultrasonic.c:           TIM1_TimeBaseInitTypeDef  TIM1_TimeBaseStructure;
+..\user\ultrasonic.c:                                     ^
+..\user\ultrasonic.c(901): warning:  #177-D: variable "TIM1_OCInitStructure" was declared but never referenced
+..\user\ultrasonic.c:           TIM1_OCInitTypeDef  TIM1_OCInitStructure;
+..\user\ultrasonic.c:                               ^
+..\user\ultrasonic.c(902): warning:  #177-D: variable "TIM1_BDTRInitStructure" was declared but never referenced
+..\user\ultrasonic.c:           TIM1_BDTRInitTypeDef TIM1_BDTRInitStructure;
+..\user\ultrasonic.c:                                ^
+..\user\ultrasonic.c(938): warning:  #177-D: variable "GPIO_InitStructure" was declared but never referenced
+..\user\ultrasonic.c:           GPIO_InitTypeDef GPIO_InitStructure;
+..\user\ultrasonic.c:                            ^
+..\user\ultrasonic.c(1214): warning:  #223-D: function "wheel_action_get_type" declared implicitly
+..\user\ultrasonic.c:                   if(wheel_action_get_type() == MACHINE_SL_FORWARD){
+..\user\ultrasonic.c:                      ^
+..\user\ultrasonic.c(1215): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ultrasonic.c:                           item.walk_dist = wheel_action_get_walk_dist();
+..\user\ultrasonic.c:                                            ^
+..\user\ultrasonic.c(1088): warning:  #177-D: variable "k" was declared but never referenced
+..\user\ultrasonic.c:           U16 k;
+..\user\ultrasonic.c:               ^
+..\user\ultrasonic.c(1092): warning:  #177-D: variable "front_ad_dist" was declared but never referenced
+..\user\ultrasonic.c:           U32 front_ad_dist = 0;
+..\user\ultrasonic.c:               ^
+..\user\ultrasonic.c(1097): warning:  #177-D: variable "right_ul_adc_recv" was declared but never referenced
+..\user\ultrasonic.c:           U8 right_ul_adc_recv = 0;
+..\user\ultrasonic.c:              ^
+..\user\ultrasonic.c(1100): warning:  #177-D: variable "walk_dist" was declared but never referenced
+..\user\ultrasonic.c:           U16 walk_dist = 0;
+..\user\ultrasonic.c:               ^
+..\user\ultrasonic.c(1232): warning:  #177-D: variable "k" was declared but never referenced
+..\user\ultrasonic.c:           U16 k;
+..\user\ultrasonic.c:               ^
+..\user\ultrasonic.c(1235): warning:  #177-D: variable "delta_time" was declared but never referenced
+..\user\ultrasonic.c:           U32 delta_time;
+..\user\ultrasonic.c:               ^
+..\user\ultrasonic.c(1237): warning:  #177-D: variable "front_dist" was declared but never referenced
+..\user\ultrasonic.c:           U32 front_dist = 0;
+..\user\ultrasonic.c:               ^
+..\user\ultrasonic.c(279): warning: C3017W: item may be used before being set
+..\user\ultrasonic.c:   ultrasonic_mid_record_item_t *item;
+..\user\ultrasonic.c:                                ^
+..\user\ultrasonic.c: ..\user\ultrasonic.c: 32 warnings, 0 errors
+compiling motor_wheel.c...
+..\user\motor_wheel.c(108): warning:  #940-D: missing return statement at end of non-void function "wheel_turn_get_finish_percent"
+..\user\motor_wheel.c:   }
+..\user\motor_wheel.c:   ^
+..\user\motor_wheel.c(157): warning:  #940-D: missing return statement at end of non-void function "wheel_action_wait_finish"
+..\user\motor_wheel.c:   }
+..\user\motor_wheel.c:   ^
+..\user\motor_wheel.c(171): warning:  #550-D: variable "old_dest_yaw" was set but never used
+..\user\motor_wheel.c:          float old_dest_yaw ;
+..\user\motor_wheel.c:                ^
+..\user\motor_wheel.c(527): warning:  #940-D: missing return statement at end of non-void function "wheel_action_get_speed"
+..\user\motor_wheel.c:   }
+..\user\motor_wheel.c:   ^
+..\user\motor_wheel.c(541): warning:  #177-D: variable "current_l_dest_int" was declared but never referenced
+..\user\motor_wheel.c:          U32 current_l_dest_int;
+..\user\motor_wheel.c:              ^
+..\user\motor_wheel.c(542): warning:  #177-D: variable "current_r_dest_int" was declared but never referenced
+..\user\motor_wheel.c:          U32 current_r_dest_int;
+..\user\motor_wheel.c:              ^
+..\user\motor_wheel.c(548): warning:  #177-D: variable "current_div" was declared but never referenced
+..\user\motor_wheel.c:          U32 current_div;
+..\user\motor_wheel.c:              ^
+..\user\motor_wheel.c(562): warning:  #550-D: variable "left_cur" was set but never used
+..\user\motor_wheel.c:          U16 left_cur, right_cur;
+..\user\motor_wheel.c:              ^
+..\user\motor_wheel.c(562): warning:  #550-D: variable "right_cur" was set but never used
+..\user\motor_wheel.c:          U16 left_cur, right_cur;
+..\user\motor_wheel.c:                        ^
+..\user\motor_wheel.c(563): warning:  #550-D: variable "last_left_pwm" was set but never used
+..\user\motor_wheel.c:          U16 last_left_pwm, last_right_pwm;
+..\user\motor_wheel.c:              ^
+..\user\motor_wheel.c(563): warning:  #550-D: variable "last_right_pwm" was set but never used
+..\user\motor_wheel.c:          U16 last_left_pwm, last_right_pwm;
+..\user\motor_wheel.c:                             ^
+..\user\motor_wheel.c(1113): warning:  #177-D: variable "current_l_dest_int" was declared but never referenced
+..\user\motor_wheel.c:          U32 current_l_dest_int;
+..\user\motor_wheel.c:              ^
+..\user\motor_wheel.c(1114): warning:  #177-D: variable "current_r_dest_int" was declared but never referenced
+..\user\motor_wheel.c:          U32 current_r_dest_int;
+..\user\motor_wheel.c:              ^
+..\user\motor_wheel.c(1120): warning:  #177-D: variable "current_div" was declared but never referenced
+..\user\motor_wheel.c:          U32 current_div;
+..\user\motor_wheel.c:              ^
+..\user\motor_wheel.c(1128): warning:  #177-D: variable "speed_add" was declared but never referenced
+..\user\motor_wheel.c:          U8 speed_add;
+..\user\motor_wheel.c:             ^
+..\user\motor_wheel.c(1496): warning:  #940-D: missing return statement at end of non-void function "wheel_task_deal_event"
+..\user\motor_wheel.c:   }
+..\user\motor_wheel.c:   ^
+..\user\motor_wheel.c: ..\user\motor_wheel.c: 16 warnings, 0 errors
+compiling ul_fsm.c...
+..\user\ul_fsm.c(141): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\ul_fsm.c:       while(wheel_action_get_finish_status() == 0) {
+..\user\ul_fsm.c:             ^
+..\user\ul_fsm.c(153): warning:  #223-D: function "ultrasonic_get_last_record" declared implicitly
+..\user\ul_fsm.c:                       ultrasonic_get_last_record(UL_TX_FRONT_LEFT_POW, &left_dist, &mid_left_dist);
+..\user\ul_fsm.c:                       ^
+..\user\ul_fsm.c(161): warning:  #223-D: function "ultrasonic_get_last_record" declared implicitly
+..\user\ul_fsm.c:                       ultrasonic_get_last_record(UL_TX_FRONT_RIGHT_POW, &mid_right_dist, &right_dist);
+..\user\ul_fsm.c:                       ^
+..\user\ul_fsm.c(62): warning:  #177-D: variable "direction" was declared but never referenced
+..\user\ul_fsm.c:       U8 direction = 0;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(63): warning:  #177-D: variable "i" was declared but never referenced
+..\user\ul_fsm.c:       U8 i;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(64): warning:  #177-D: variable "dest_event" was declared but never referenced
+..\user\ul_fsm.c:       U8 dest_event = UL_EVENT_NONE;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(237): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(245): warning:  #223-D: function "ultrasonic_get_last_record" declared implicitly
+..\user\ul_fsm.c:               ultrasonic_get_last_record(UL_TX_MID_POW, &left_dist, &right_dist);
+..\user\ul_fsm.c:               ^
+..\user\ul_fsm.c(230): warning:  #177-D: variable "dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 dist = 0;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(231): warning:  #177-D: variable "i" was declared but never referenced
+..\user\ul_fsm.c:       U8 i;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(365): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:               walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                           ^
+..\user\ul_fsm.c(352): warning:  #177-D: variable "dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(355): warning:  #177-D: variable "left_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(355): warning:  #177-D: variable "right_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:                      ^
+..\user\ul_fsm.c(460): warning:  #223-D: function "mpu_get_current_yaw" declared implicitly
+..\user\ul_fsm.c:       mpu_get_current_yaw(&current_yaw);
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(507): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(612): warning:  #223-D: function "mpu_get_current_yaw" declared implicitly
+..\user\ul_fsm.c:                               mpu_get_current_yaw(&yaw);
+..\user\ul_fsm.c:                               ^
+..\user\ul_fsm.c(741): warning:  #940-D: missing return statement at end of non-void function "ul_walking_timeout"
+..\user\ul_fsm.c:   }
+..\user\ul_fsm.c:   ^
+..\user\ul_fsm.c(502): warning:  #177-D: variable "left_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(502): warning:  #177-D: variable "right_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:                      ^
+..\user\ul_fsm.c(504): warning:  #177-D: variable "mid_left_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 mid_left_dist, mid_right_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(504): warning:  #177-D: variable "mid_right_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 mid_left_dist, mid_right_dist;
+..\user\ul_fsm.c:                          ^
+..\user\ul_fsm.c(796): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(899): warning:  #223-D: function "mpu_get_current_yaw" declared implicitly
+..\user\ul_fsm.c:                               mpu_get_current_yaw(&yaw);
+..\user\ul_fsm.c:                               ^
+..\user\ul_fsm.c(785): warning:  #177-D: variable "left_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(785): warning:  #177-D: variable "right_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:                      ^
+..\user\ul_fsm.c(786): warning:  #177-D: variable "finish_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 finish_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(788): warning:  #177-D: variable "dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 dist = 0;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(789): warning:  #177-D: variable "adjust_flag" was declared but never referenced
+..\user\ul_fsm.c:       U8 adjust_flag = 0;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(790): warning:  #177-D: variable "rc" was declared but never referenced
+..\user\ul_fsm.c:       U8 rc = 0;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(1007): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(1259): warning:  #223-D: function "mpu_get_current_yaw" declared implicitly
+..\user\ul_fsm.c:                               mpu_get_current_yaw(&yaw);
+..\user\ul_fsm.c:                               ^
+..\user\ul_fsm.c(1394): warning:  #940-D: missing return statement at end of non-void function "ul_fsm_parse_event"
+..\user\ul_fsm.c:   }
+..\user\ul_fsm.c:   ^
+..\user\ul_fsm.c(992): warning:  #177-D: variable "finish_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 finish_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(994): warning:  #177-D: variable "dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 dist = 0;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(995): warning:  #550-D: variable "adjust_flag" was set but never used
+..\user\ul_fsm.c:       U8 adjust_flag = 0;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(1705): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(1876): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(1983): warning:  #177-D: variable "left_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(1983): warning:  #177-D: variable "right_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:                      ^
+..\user\ul_fsm.c(2072): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       ul_fsm_wall_finding_right_near,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2076): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       ul_fsm_close_mid_adjust,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2079): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       ul_fsm_along_near,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2083): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       ul_fsm_along_away,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2086): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       ul_cornor_walking_parse, //ul_fsm_cornor_walking,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2090): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       ul_walking_timeout,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2093): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       ul_fsm_forward_lost_ward,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2096): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       ul_fsm_forward_knock,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2100): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       ul_fsm_climb,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2103): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       ul_fsm_boundary,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2115): warning:  #144-D: a value of type "U8 (*)(void *)" cannot be used to initialize an entity of type "motor_fsm_f"
+..\user\ul_fsm.c:       fsm_around_object,
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(2145): warning:  #940-D: missing return statement at end of non-void function "fsm_around_object"
+..\user\ul_fsm.c:   }
+..\user\ul_fsm.c:   ^
+..\user\ul_fsm.c(2160): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(2294): warning:  #223-D: function "mpu_get_current_yaw" declared implicitly
+..\user\ul_fsm.c:                               mpu_get_current_yaw(&yaw);
+..\user\ul_fsm.c:                               ^
+..\user\ul_fsm.c(2149): warning:  #177-D: variable "left_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(2149): warning:  #177-D: variable "right_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:                      ^
+..\user\ul_fsm.c(2150): warning:  #177-D: variable "finish_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 finish_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(2152): warning:  #177-D: variable "dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 dist = 0;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(2153): warning:  #177-D: variable "adjust_flag" was declared but never referenced
+..\user\ul_fsm.c:       U8 adjust_flag = 0;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(2154): warning:  #177-D: variable "rc" was declared but never referenced
+..\user\ul_fsm.c:       U8 rc = 0;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(2461): warning:  #940-D: missing return statement at end of non-void function "ul_fsm_boundary"
+..\user\ul_fsm.c:   }
+..\user\ul_fsm.c:   ^
+..\user\ul_fsm.c(2475): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(2496): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\ul_fsm.c:               if(wheel_action_get_finish_status()) {
+..\user\ul_fsm.c:                  ^
+..\user\ul_fsm.c(2601): warning:  #223-D: function "mpu_get_current_yaw" declared implicitly
+..\user\ul_fsm.c:                               mpu_get_current_yaw(&yaw);
+..\user\ul_fsm.c:                               ^
+..\user\ul_fsm.c(2464): warning:  #177-D: variable "left_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(2464): warning:  #177-D: variable "right_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 left_dist, right_dist;
+..\user\ul_fsm.c:                      ^
+..\user\ul_fsm.c(2465): warning:  #177-D: variable "finish_dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 finish_dist;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(2467): warning:  #177-D: variable "dist" was declared but never referenced
+..\user\ul_fsm.c:       U16 dist = 0;
+..\user\ul_fsm.c:           ^
+..\user\ul_fsm.c(2468): warning:  #177-D: variable "adjust_flag" was declared but never referenced
+..\user\ul_fsm.c:       U8 adjust_flag = 0;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(2469): warning:  #177-D: variable "rc" was declared but never referenced
+..\user\ul_fsm.c:       U8 rc = 0;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c(2726): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\ul_fsm.c:                               if(wheel_action_get_finish_status()) {
+..\user\ul_fsm.c:                                  ^
+..\user\ul_fsm.c(2775): warning:  #117-D: non-void function "ul_fsm_climb" should return a value
+..\user\ul_fsm.c:                               return ;
+..\user\ul_fsm.c:                                      ^
+..\user\ul_fsm.c(2791): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\ul_fsm.c:                               if(wheel_action_get_finish_status()) {
+..\user\ul_fsm.c:                                  ^
+..\user\ul_fsm.c(2836): warning:  #940-D: missing return statement at end of non-void function "ul_fsm_climb"
+..\user\ul_fsm.c:   }
+..\user\ul_fsm.c:   ^
+..\user\ul_fsm.c(3735): warning:  #940-D: missing return statement at end of non-void function "ul_fsm_forward_knock"
+..\user\ul_fsm.c:   }
+..\user\ul_fsm.c:   ^
+..\user\ul_fsm.c(3751): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(3949): warning:  #111-D: statement is unreachable
+..\user\ul_fsm.c:       if(clean_fsm.cornor_walking != 1 ||clean_fsm.current_state != STATE_ALONG_CORNOR_WALKING) {
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(3955): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(3979): warning:  #111-D: statement is unreachable
+..\user\ul_fsm.c:       if(clean_fsm.cornor_walking != 1 ||clean_fsm.current_state != STATE_ALONG_CORNOR_WALKING) {
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(3985): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(4013): warning:  #111-D: statement is unreachable
+..\user\ul_fsm.c:       if(clean_fsm.current_state != STATE_APPROACH_CORNOR ) {
+..\user\ul_fsm.c:       ^
+..\user\ul_fsm.c(4020): warning:  #223-D: function "ultrasonic_get_last_record" declared implicitly
+..\user\ul_fsm.c:               ultrasonic_get_last_record(UL_TX_MID_POW, &left_dist, &right_dist);
+..\user\ul_fsm.c:               ^
+..\user\ul_fsm.c(4036): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\ul_fsm.c:       walk_dist = wheel_action_get_walk_dist();
+..\user\ul_fsm.c:                   ^
+..\user\ul_fsm.c(4055): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\ul_fsm.c:       while(wheel_action_get_finish_status() == 0) {
+..\user\ul_fsm.c:             ^
+..\user\ul_fsm.c(4063): warning:  #223-D: function "ultrasonic_get_last_record" declared implicitly
+..\user\ul_fsm.c:                       ultrasonic_get_last_record(UL_TX_MID_POW, &left_dist, &right_dist);
+..\user\ul_fsm.c:                       ^
+..\user\ul_fsm.c(4098): warning:  #117-D: non-void function "ul_fsm_wall_finding_right_near" should return a value
+..\user\ul_fsm.c:       return ;
+..\user\ul_fsm.c:              ^
+..\user\ul_fsm.c(4146): warning:  #940-D: missing return statement at end of non-void function "motor_deal_with_ultrasonic_event"
+..\user\ul_fsm.c:   }
+..\user\ul_fsm.c:   ^
+..\user\ul_fsm.c(4107): warning:  #177-D: variable "rc" was declared but never referenced
+..\user\ul_fsm.c:       U8 rc = 0;
+..\user\ul_fsm.c:          ^
+..\user\ul_fsm.c: ..\user\ul_fsm.c: 88 warnings, 0 errors
+compiling math.c...
+..\user\math.c(108): warning:  #940-D: missing return statement at end of non-void function "ul_parse_xy_data"
+..\user\math.c:   }
+..\user\math.c:   ^
+..\user\math.c(245): warning:  #223-D: function "wheel_action_get_type" declared implicitly
+..\user\math.c:         if(wheel_action_get_type() == MACHINE_SL_FORWARD ){
+..\user\math.c:            ^
+..\user\math.c(247): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\math.c:                 walk_dist = wheel_action_get_walk_dist();
+..\user\math.c:                             ^
+..\user\math.c(453): warning:  #940-D: missing return statement at end of non-void function "ul_check_motor_current"
+..\user\math.c:   }
+..\user\math.c:   ^
+..\user\math.c(236): warning:  #177-D: variable "left_max_cur" was declared but never referenced
+..\user\math.c:         U16 left_max_cur, right_max_cur;
+..\user\math.c:             ^
+..\user\math.c(236): warning:  #177-D: variable "right_max_cur" was declared but never referenced
+..\user\math.c:         U16 left_max_cur, right_max_cur;
+..\user\math.c:                           ^
+..\user\math.c(476): warning:  #223-D: function "ultrasonic_get_last_record" declared implicitly
+..\user\math.c:                 ultrasonic_get_last_record(UL_TX_FRONT_LEFT_POW, left_dist, mid_left_dist);
+..\user\math.c:                 ^
+..\user\math.c(512): warning:  #223-D: function "ultrasonic_get_last_record" declared implicitly
+..\user\math.c:                 ultrasonic_get_last_record(UL_TX_FRONT_RIGHT_POW, mid_right_dist, right_dist);
+..\user\math.c:                 ^
+..\user\math.c(522): warning:  #940-D: missing return statement at end of non-void function "ul_get_distance_once"
+..\user\math.c:   }
+..\user\math.c:   ^
+..\user\math.c(559): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\math.c:                 walk_dist  = wheel_action_get_walk_dist();
+..\user\math.c:                              ^
+..\user\math.c(831): warning:  #223-D: function "wheel_action_check_yaw_offset" declared implicitly
+..\user\math.c:                                                 else if(wheel_action_check_yaw_offset()) {
+..\user\math.c:                                                         ^
+..\user\math.c(862): warning:  #111-D: statement is unreachable
+..\user\math.c:                                 goto out1;
+..\user\math.c:                                 ^
+..\user\math.c(885): warning:  #111-D: statement is unreachable
+..\user\math.c:                                 goto out1;
+..\user\math.c:                                 ^
+..\user\math.c(1090): warning:  #223-D: function "wheel_action_get_finish_status" declared implicitly
+..\user\math.c:                                                                         rc = wheel_action_get_finish_status();
+..\user\math.c:                                                                              ^
+..\user\math.c(1378): warning:  #940-D: missing return statement at end of non-void function "cornor_walking_yaw_check"
+..\user\math.c:   }
+..\user\math.c:   ^
+..\user\math.c(1401): warning:  #223-D: function "mpu_get_current_yaw" declared implicitly
+..\user\math.c:         mpu_get_current_yaw(&current_yaw);      
+..\user\math.c:         ^
+..\user\math.c(1394): warning:  #177-D: variable "total_dist" was declared but never referenced
+..\user\math.c:         U16 total_dist;
+..\user\math.c:             ^
+..\user\math.c(1656): warning:  #223-D: function "wheel_action_get_type" declared implicitly
+..\user\math.c:         if(wheel_action_get_type() != MACHINE_SL_FORWARD) {
+..\user\math.c:            ^
+..\user\math.c(1667): warning:  #223-D: function "ultrasonic_get_last_record" declared implicitly
+..\user\math.c:                 ultrasonic_get_last_record(UL_TX_FRONT_LEFT_POW, &left_dist, &mid_left_dist);
+..\user\math.c:                 ^
+..\user\math.c(1711): warning:  #223-D: function "ultrasonic_get_last_record" declared implicitly
+..\user\math.c:                 ultrasonic_get_last_record(UL_TX_FRONT_RIGHT_POW, &mid_right_dist, &right_dist);
+..\user\math.c:                 ^
+..\user\math.c(1862): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\math.c:                 walk_dist = wheel_action_get_walk_dist();
+..\user\math.c:                             ^
+..\user\math.c(1635): warning:  #177-D: variable "y_dist" was declared but never referenced
+..\user\math.c:         U32  y_dist;
+..\user\math.c:              ^
+..\user\math.c(1636): warning:  #177-D: variable "x_dist" was declared but never referenced
+..\user\math.c:         int x_dist;
+..\user\math.c:             ^
+..\user\math.c(1638): warning:  #177-D: variable "near_flag" was declared but never referenced
+..\user\math.c:         U8 near_flag;
+..\user\math.c:            ^
+..\user\math.c(1639): warning:  #177-D: variable "ob_position" was declared but never referenced
+..\user\math.c:         U8 ob_position = OB_POSITION_NONE;
+..\user\math.c:            ^
+..\user\math.c(1641): warning:  #177-D: variable "machine_opposite_position" was declared but never referenced
+..\user\math.c:         U8 machine_opposite_position = MACHINE_OPPOSITE_WARD_MID;
+..\user\math.c:            ^
+..\user\math.c(1642): warning:  #177-D: variable "ob_bitmap" was declared but never referenced
+..\user\math.c:         U8 ob_bitmap = 0;
+..\user\math.c:            ^
+..\user\math.c(1643): warning:  #177-D: variable "left_min" was declared but never referenced
+..\user\math.c:         U16 left_min = 0xffff, right_min = 0xffff, mid_min = 0xffff;
+..\user\math.c:             ^
+..\user\math.c(1643): warning:  #177-D: variable "right_min" was declared but never referenced
+..\user\math.c:         U16 left_min = 0xffff, right_min = 0xffff, mid_min = 0xffff;
+..\user\math.c:                                ^
+..\user\math.c(1643): warning:  #177-D: variable "mid_min" was declared but never referenced
+..\user\math.c:         U16 left_min = 0xffff, right_min = 0xffff, mid_min = 0xffff;
+..\user\math.c:                                                    ^
+..\user\math.c(1644): warning:  #177-D: variable "nearest_dist" was declared but never referenced
+..\user\math.c:         U16 nearest_dist = 0xffff;
+..\user\math.c:             ^
+..\user\math.c(1645): warning:  #177-D: variable "nearest_position" was declared but never referenced
+..\user\math.c:         U8 nearest_position = 0;
+..\user\math.c:            ^
+..\user\math.c(1646): warning:  #177-D: variable "need_adjust" was declared but never referenced
+..\user\math.c:         U8 need_adjust = 0;     
+..\user\math.c:            ^
+..\user\math.c(1647): warning:  #177-D: variable "adjust_forward" was declared but never referenced
+..\user\math.c:         U8 adjust_forward = 0;
+..\user\math.c:            ^
+..\user\math.c(1648): warning:  #177-D: variable "nearest_minim" was declared but never referenced
+..\user\math.c:         U8 nearest_minim = 0;
+..\user\math.c:            ^
+..\user\math.c(1650): warning:  #177-D: variable "left_cur" was declared but never referenced
+..\user\math.c:         U16 left_cur, right_cur;
+..\user\math.c:             ^
+..\user\math.c(1650): warning:  #177-D: variable "right_cur" was declared but never referenced
+..\user\math.c:         U16 left_cur, right_cur;
+..\user\math.c:                       ^
+..\user\math.c: ..\user\math.c: 37 warnings, 0 errors
+compiling pcf8563.c...
+..\user\pcf8563.c(42): warning:  #177-D: variable "rc" was declared but never referenced
+..\user\pcf8563.c:      U8 rc = 0;
+..\user\pcf8563.c:         ^
+..\user\pcf8563.c: ..\user\pcf8563.c: 1 warning, 0 errors
+compiling tm1637.c...
+..\user\tm1637.c(140): warning:  #177-D: variable "j" was declared but never referenced
+..\user\tm1637.c:   U8 j = 0;
+..\user\tm1637.c:      ^
+..\user\tm1637.c: ..\user\tm1637.c: 1 warning, 0 errors
+compiling inv_mpu.c...
+..\user\mpu\inv_mpu.c(803): warning:  #223-D: function "memset" declared implicitly
+..\user\mpu\inv_mpu.c:       memset(&st.chip_cfg.cache, 0, sizeof(st.chip_cfg.cache));
+..\user\mpu\inv_mpu.c:       ^
+..\user\mpu\inv_mpu.c(950): warning:  #223-D: function "stm_get_ms" declared implicitly
+..\user\mpu\inv_mpu.c:           get_ms(timestamp);
+..\user\mpu\inv_mpu.c:           ^
+..\user\mpu\inv_mpu.c(973): warning:  #223-D: function "stm_get_ms" declared implicitly
+..\user\mpu\inv_mpu.c:           get_ms(timestamp);
+..\user\mpu\inv_mpu.c:           ^
+..\user\mpu\inv_mpu.c(995): warning:  #223-D: function "stm_get_ms" declared implicitly
+..\user\mpu\inv_mpu.c:           get_ms(timestamp);
+..\user\mpu\inv_mpu.c:           ^
+..\user\mpu\inv_mpu.c(1705): warning:  #223-D: function "stm_get_ms" declared implicitly
+..\user\mpu\inv_mpu.c:       get_ms((unsigned long*)timestamp);
+..\user\mpu\inv_mpu.c:       ^
+..\user\mpu\inv_mpu.c(1898): warning:  #223-D: function "labs" declared implicitly
+..\user\mpu\inv_mpu.c:           st_shift_cust = labs(bias_regular[jj] - bias_st[jj]) / 65536.f;
+..\user\mpu\inv_mpu.c:                           ^
+..\user\mpu\inv_mpu.c(1925): warning:  #223-D: function "labs" declared implicitly
+..\user\mpu\inv_mpu.c:           st_shift_cust = labs(bias_regular[jj] - bias_st[jj]) / 65536.f;
+..\user\mpu\inv_mpu.c:                           ^
+..\user\mpu\inv_mpu.c(2336): warning:  #223-D: function "memcmp" declared implicitly
+..\user\mpu\inv_mpu.c:           if (memcmp(firmware+ii, cur, this_write)){
+..\user\mpu\inv_mpu.c:               ^
+..\user\mpu\inv_mpu.c: ..\user\mpu\inv_mpu.c: 8 warnings, 0 errors
+compiling mpu_i2c.c...
+..\user\mpu\mpu_i2c.c(235): warning:  #68-D: integer conversion resulted in a change of sign
+..\user\mpu\mpu_i2c.c:                  return MPU_FALSE;
+..\user\mpu\mpu_i2c.c:                         ^
+..\user\mpu\mpu_i2c.c(247): warning:  #68-D: integer conversion resulted in a change of sign
+..\user\mpu\mpu_i2c.c:                  return MPU_FALSE;
+..\user\mpu\mpu_i2c.c:                         ^
+..\user\mpu\mpu_i2c.c: ..\user\mpu\mpu_i2c.c: 2 warnings, 0 errors
+compiling mpu_main.c...
+..\user\mpu\mpu_main.c(238): warning:  #223-D: function "memset" declared implicitly
+..\user\mpu\mpu_main.c:         memset((U8 *)&mpu_buffer_data, 0, sizeof(mpu_buffer_data_t));
+..\user\mpu\mpu_main.c:         ^
+..\user\mpu\mpu_main.c(285): warning:  #167-D: argument of type "volatile float *" is incompatible with parameter of type "float *"
+..\user\mpu\mpu_main.c:                         mpu_get_data(&walk_dest_yaw, &walk_dest_roll, &walk_dest_pitch, 1); 
+..\user\mpu\mpu_main.c:                                      ^
+..\user\mpu\mpu_main.c(285): warning:  #167-D: argument of type "volatile float *" is incompatible with parameter of type "float *"
+..\user\mpu\mpu_main.c:                         mpu_get_data(&walk_dest_yaw, &walk_dest_roll, &walk_dest_pitch, 1); 
+..\user\mpu\mpu_main.c:                                                      ^
+..\user\mpu\mpu_main.c(285): warning:  #167-D: argument of type "volatile float *" is incompatible with parameter of type "float *"
+..\user\mpu\mpu_main.c:                         mpu_get_data(&walk_dest_yaw, &walk_dest_roll, &walk_dest_pitch, 1); 
+..\user\mpu\mpu_main.c:                                                                       ^
+..\user\mpu\mpu_main.c(302): warning:  #167-D: argument of type "volatile float *" is incompatible with parameter of type "float *"
+..\user\mpu\mpu_main.c:                         mpu_get_data(&walk_dest_yaw, &walk_dest_roll, &walk_dest_pitch, 1); 
+..\user\mpu\mpu_main.c:                                      ^
+..\user\mpu\mpu_main.c(302): warning:  #167-D: argument of type "volatile float *" is incompatible with parameter of type "float *"
+..\user\mpu\mpu_main.c:                         mpu_get_data(&walk_dest_yaw, &walk_dest_roll, &walk_dest_pitch, 1); 
+..\user\mpu\mpu_main.c:                                                      ^
+..\user\mpu\mpu_main.c(302): warning:  #167-D: argument of type "volatile float *" is incompatible with parameter of type "float *"
+..\user\mpu\mpu_main.c:                         mpu_get_data(&walk_dest_yaw, &walk_dest_roll, &walk_dest_pitch, 1); 
+..\user\mpu\mpu_main.c:                                                                       ^
+..\user\mpu\mpu_main.c(318): warning:  #167-D: argument of type "volatile float *" is incompatible with parameter of type "float *"
+..\user\mpu\mpu_main.c:                         mpu_get_data(&walk_dest_yaw, &walk_dest_roll, &walk_dest_pitch, 1); 
+..\user\mpu\mpu_main.c:                                      ^
+..\user\mpu\mpu_main.c(318): warning:  #167-D: argument of type "volatile float *" is incompatible with parameter of type "float *"
+..\user\mpu\mpu_main.c:                         mpu_get_data(&walk_dest_yaw, &walk_dest_roll, &walk_dest_pitch, 1); 
+..\user\mpu\mpu_main.c:                                                      ^
+..\user\mpu\mpu_main.c(318): warning:  #167-D: argument of type "volatile float *" is incompatible with parameter of type "float *"
+..\user\mpu\mpu_main.c:                         mpu_get_data(&walk_dest_yaw, &walk_dest_roll, &walk_dest_pitch, 1); 
+..\user\mpu\mpu_main.c:                                                                       ^
+..\user\mpu\mpu_main.c(434): warning:  #223-D: function "wheel_action_get_type" declared implicitly
+..\user\mpu\mpu_main.c:                 if((wheel_action_get_type() != MACHINE_BACKWARD) && (ultrasonic_global_event!=OB_POSITION_BOUNDARY) )
+..\user\mpu\mpu_main.c:                     ^
+..\user\mpu\mpu_main.c(619): warning:  #940-D: missing return statement at end of non-void function "mpu_get_xyz_offset"
+..\user\mpu\mpu_main.c:   }
+..\user\mpu\mpu_main.c:   ^
+..\user\mpu\mpu_main.c(499): warning:  #177-D: variable "yawu" was declared but never referenced
+..\user\mpu\mpu_main.c:          U32 yawu, rollu, pitchu;
+..\user\mpu\mpu_main.c:              ^
+..\user\mpu\mpu_main.c(499): warning:  #177-D: variable "rollu" was declared but never referenced
+..\user\mpu\mpu_main.c:          U32 yawu, rollu, pitchu;
+..\user\mpu\mpu_main.c:                    ^
+..\user\mpu\mpu_main.c(499): warning:  #177-D: variable "pitchu" was declared but never referenced
+..\user\mpu\mpu_main.c:          U32 yawu, rollu, pitchu;
+..\user\mpu\mpu_main.c:                           ^
+..\user\mpu\mpu_main.c(500): warning:  #177-D: variable "fsr" was declared but never referenced
+..\user\mpu\mpu_main.c:          U8 fsr;
+..\user\mpu\mpu_main.c:             ^
+..\user\mpu\mpu_main.c(501): warning:  #177-D: variable "left_cur" was declared but never referenced
+..\user\mpu\mpu_main.c:         U16 left_cur, right_cur;
+..\user\mpu\mpu_main.c:             ^
+..\user\mpu\mpu_main.c(501): warning:  #177-D: variable "right_cur" was declared but never referenced
+..\user\mpu\mpu_main.c:         U16 left_cur, right_cur;
+..\user\mpu\mpu_main.c:                       ^
+..\user\mpu\mpu_main.c(502): warning:  #177-D: variable "left_speed" was declared but never referenced
+..\user\mpu\mpu_main.c:         U16 left_speed, right_speed;
+..\user\mpu\mpu_main.c:             ^
+..\user\mpu\mpu_main.c(502): warning:  #177-D: variable "right_speed" was declared but never referenced
+..\user\mpu\mpu_main.c:         U16 left_speed, right_speed;
+..\user\mpu\mpu_main.c:                         ^
+..\user\mpu\mpu_main.c(503): warning:  #177-D: variable "xg" was declared but never referenced
+..\user\mpu\mpu_main.c:         float xg, yg,zg;        
+..\user\mpu\mpu_main.c:               ^
+..\user\mpu\mpu_main.c(503): warning:  #177-D: variable "yg" was declared but never referenced
+..\user\mpu\mpu_main.c:         float xg, yg,zg;        
+..\user\mpu\mpu_main.c:                   ^
+..\user\mpu\mpu_main.c(503): warning:  #177-D: variable "zg" was declared but never referenced
+..\user\mpu\mpu_main.c:         float xg, yg,zg;        
+..\user\mpu\mpu_main.c:                      ^
+..\user\mpu\mpu_main.c(664): warning:  #223-D: function "wheel_action_get_type" declared implicitly
+..\user\mpu\mpu_main.c:         }else  if(ultrasonic_global_event == OB_POSITION_NONE && wheel_action_get_type() == MACHINE_SL_FORWARD ){
+..\user\mpu\mpu_main.c:                                                                  ^
+..\user\mpu\mpu_main.c(730): warning:  #940-D: missing return statement at end of non-void function "mpu_check_climb"
+..\user\mpu\mpu_main.c:   }
+..\user\mpu\mpu_main.c:   ^
+..\user\mpu\mpu_main.c(786): warning:  #223-D: function "wheel_action_get_type" declared implicitly
+..\user\mpu\mpu_main.c:                 if(ultrasonic_global_event == OB_POSITION_NONE &&wheel_action_get_type() == MACHINE_SL_FORWARD)
+..\user\mpu\mpu_main.c:                                                                  ^
+..\user\mpu\mpu_main.c(737): warning:  #177-D: variable "yawu" was declared but never referenced
+..\user\mpu\mpu_main.c:          U32 yawu, rollu, pitchu;
+..\user\mpu\mpu_main.c:              ^
+..\user\mpu\mpu_main.c(737): warning:  #177-D: variable "rollu" was declared but never referenced
+..\user\mpu\mpu_main.c:          U32 yawu, rollu, pitchu;
+..\user\mpu\mpu_main.c:                    ^
+..\user\mpu\mpu_main.c(737): warning:  #177-D: variable "pitchu" was declared but never referenced
+..\user\mpu\mpu_main.c:          U32 yawu, rollu, pitchu;
+..\user\mpu\mpu_main.c:                           ^
+..\user\mpu\mpu_main.c(738): warning:  #177-D: variable "fsr" was declared but never referenced
+..\user\mpu\mpu_main.c:          U8 fsr;
+..\user\mpu\mpu_main.c:             ^
+..\user\mpu\mpu_main.c(739): warning:  #177-D: variable "left_cur" was declared but never referenced
+..\user\mpu\mpu_main.c:         U16 left_cur, right_cur;
+..\user\mpu\mpu_main.c:             ^
+..\user\mpu\mpu_main.c(739): warning:  #177-D: variable "right_cur" was declared but never referenced
+..\user\mpu\mpu_main.c:         U16 left_cur, right_cur;
+..\user\mpu\mpu_main.c:                       ^
+..\user\mpu\mpu_main.c(740): warning:  #177-D: variable "left_speed" was declared but never referenced
+..\user\mpu\mpu_main.c:         U16 left_speed, right_speed;
+..\user\mpu\mpu_main.c:             ^
+..\user\mpu\mpu_main.c(740): warning:  #177-D: variable "right_speed" was declared but never referenced
+..\user\mpu\mpu_main.c:         U16 left_speed, right_speed;
+..\user\mpu\mpu_main.c:                         ^
+..\user\mpu\mpu_main.c(744): warning:  #550-D: variable "dvx" was set but never used
+..\user\mpu\mpu_main.c:         float dvx,dvy,dvz;
+..\user\mpu\mpu_main.c:               ^
+..\user\mpu\mpu_main.c(744): warning:  #550-D: variable "dvz" was set but never used
+..\user\mpu\mpu_main.c:         float dvx,dvy,dvz;
+..\user\mpu\mpu_main.c:                       ^
+..\user\mpu\mpu_main.c(745): warning:  #177-D: variable "walk_dist" was declared but never referenced
+..\user\mpu\mpu_main.c:         U16 walk_dist;
+..\user\mpu\mpu_main.c:             ^
+..\user\mpu\mpu_main.c(1131): warning:  #223-D: function "dma_mem_reset" declared implicitly
+..\user\mpu\mpu_main.c:                   dma_mem_reset(&motor_global_setting);
+..\user\mpu\mpu_main.c:                   ^
+..\user\mpu\mpu_main.c(885): warning:  #177-D: variable "count" was declared but never referenced
+..\user\mpu\mpu_main.c:         U16 count = 0;
+..\user\mpu\mpu_main.c:             ^
+..\user\mpu\mpu_main.c(886): warning:  #177-D: variable "acc_x" was declared but never referenced
+..\user\mpu\mpu_main.c:         int acc_x = 0, acc_y = 0, acc_z = 0;
+..\user\mpu\mpu_main.c:             ^
+..\user\mpu\mpu_main.c(886): warning:  #177-D: variable "acc_y" was declared but never referenced
+..\user\mpu\mpu_main.c:         int acc_x = 0, acc_y = 0, acc_z = 0;
+..\user\mpu\mpu_main.c:                        ^
+..\user\mpu\mpu_main.c(886): warning:  #177-D: variable "acc_z" was declared but never referenced
+..\user\mpu\mpu_main.c:         int acc_x = 0, acc_y = 0, acc_z = 0;
+..\user\mpu\mpu_main.c:                                   ^
+..\user\mpu\mpu_main.c(1155): warning:  #223-D: function "wheel_action_get_type" declared implicitly
+..\user\mpu\mpu_main.c:         if(wheel_action_get_type() != MACHINE_SL_FORWARD) {
+..\user\mpu\mpu_main.c:            ^
+..\user\mpu\mpu_main.c(1166): warning:  #223-D: function "wheel_action_get_walk_dist" declared implicitly
+..\user\mpu\mpu_main.c:         dist = wheel_action_get_walk_dist();
+..\user\mpu\mpu_main.c:                ^
+..\user\mpu\mpu_main.c(744): warning: C3017W: dvy may be used before being set
+..\user\mpu\mpu_main.c:         float dvx,dvy,dvz;
+..\user\mpu\mpu_main.c:            ^
+..\user\mpu\mpu_main.c(888): warning: C3017W: i may be used before being set
+..\user\mpu\mpu_main.c:         U8 i;
+..\user\mpu\mpu_main.c:     ^
+..\user\mpu\mpu_main.c: ..\user\mpu\mpu_main.c: 46 warnings, 0 errors
+compiling mpu_displacement.c...
+..\user\mpu\mpu_displacement.c(205): warning:  #223-D: function "memset" declared implicitly
+..\user\mpu\mpu_displacement.c:         memset(float_string,0,90);
+..\user\mpu\mpu_displacement.c:         ^
+..\user\mpu\mpu_displacement.c(206): warning:  #223-D: function "sprintf" declared implicitly
+..\user\mpu\mpu_displacement.c:         sprintf(float_string, "new speed:       %f      %f      %f\r\n", NewSpeed[0],NewSpeed[1],NewSpeed[2]);
+..\user\mpu\mpu_displacement.c:         ^
+..\user\mpu\mpu_displacement.c: ..\user\mpu\mpu_displacement.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=78350 RO-data=3874 RW-data=1196 ZI-data=13460  
+FromELF: creating hex file...
+".\Obj\STM32_Flash.axf" - 0 Error(s), 327 Warning(s).

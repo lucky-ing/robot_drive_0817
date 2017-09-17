@@ -1,0 +1,7 @@
+--cpu Cortex-M3 ".\obj\cortexm3_macro.o" ".\obj\stm32f10x_it.o" ".\obj\stm32f10x_startup.o" ".\obj\stm32f10x_target.o" ".\obj\stm32f10x_adc.o" ".\obj\stm32f10x_bkp.o" ".\obj\stm32f10x_dma.o" ".\obj\stm32f10x_exti.o" ".\obj\stm32f10x_flash.o" ".\obj\stm32f10x_gpio.o" ".\obj\stm32f10x_iwdg.o" ".\obj\stm32f10x_lib.o" ".\obj\stm32f10x_nvic.o" ".\obj\stm32f10x_pwr.o" ".\obj\stm32f10x_rcc.o" ".\obj\stm32f10x_rtc.o" ".\obj\stm32f10x_systick.o" ".\obj\stm32f10x_tim.o" ".\obj\stm32f10x_usart.o" ".\obj\stm32f10x_tim1.o" ".\obj\os_cpu_a.o" ".\obj\os_cpu_c.o" ".\obj\os_dbg.o" ".\obj\ucos_ii.o" ".\obj\uart.o" ".\obj\main.o" ".\obj\create_task.o" ".\obj\detect.o" ".\obj\rf.o" ".\obj\display.o" ".\obj\motor_hal.o" ".\obj\kdebug.o" ".\obj\hoover_disp.o" ".\obj\pcf8563.o" ".\obj\tm1637.o" ".\obj\function.o" ".\obj\mpu_i2c.o" 
+--library_type=microlib 
+--feedback ".\Obj\STM32_RtosFlash.fed" --feedback_image=none 
+--strict --scatter ".\Obj\STM32_RtosFlash.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\List\STM32_RtosFlash.map" -o .\Obj\STM32_RtosFlash.axf

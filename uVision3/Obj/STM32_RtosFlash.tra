@@ -1,0 +1,59 @@
+*** Creating Trace Output File '.\Obj\STM32_RtosFlash.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\cortexm3_macro.o"'
+### List of Objects: adding '".\obj\stm32f10x_it.o"'
+### List of Objects: adding '".\obj\stm32f10x_startup.o"'
+### List of Objects: adding '".\obj\stm32f10x_target.o"'
+### List of Objects: adding '".\obj\stm32f10x_adc.o"'
+### List of Objects: adding '".\obj\stm32f10x_bkp.o"'
+### List of Objects: adding '".\obj\stm32f10x_dma.o"'
+### List of Objects: adding '".\obj\stm32f10x_exti.o"'
+### List of Objects: adding '".\obj\stm32f10x_flash.o"'
+### List of Objects: adding '".\obj\stm32f10x_gpio.o"'
+### List of Objects: adding '".\obj\stm32f10x_iwdg.o"'
+### List of Objects: adding '".\obj\stm32f10x_lib.o"'
+### List of Objects: adding '".\obj\stm32f10x_nvic.o"'
+### List of Objects: adding '".\obj\stm32f10x_pwr.o"'
+### List of Objects: adding '".\obj\stm32f10x_rcc.o"'
+### List of Objects: adding '".\obj\stm32f10x_rtc.o"'
+### List of Objects: adding '".\obj\stm32f10x_systick.o"'
+### List of Objects: adding '".\obj\stm32f10x_tim.o"'
+### List of Objects: adding '".\obj\stm32f10x_usart.o"'
+### List of Objects: adding '".\obj\stm32f10x_tim1.o"'
+### List of Objects: adding '".\obj\os_cpu_a.o"'
+### List of Objects: adding '".\obj\os_cpu_c.o"'
+### List of Objects: adding '".\obj\os_dbg.o"'
+### List of Objects: adding '".\obj\ucos_ii.o"'
+### List of Objects: adding '".\obj\uart.o"'
+### List of Objects: adding '".\obj\main.o"'
+### List of Objects: adding '".\obj\create_task.o"'
+### List of Objects: adding '".\obj\detect.o"'
+### List of Objects: adding '".\obj\rf.o"'
+### List of Objects: adding '".\obj\display.o"'
+### List of Objects: adding '".\obj\motor_hal.o"'
+### List of Objects: adding '".\obj\kdebug.o"'
+### List of Objects: adding '".\obj\hoover_disp.o"'
+### List of Objects: adding '".\obj\pcf8563.o"'
+### List of Objects: adding '".\obj\tm1637.o"'
+### List of Objects: adding '".\obj\function.o"'
+### List of Objects: adding '".\obj\inv_mpu_dmp_motion_driver.o"'
+### List of Objects: adding '".\obj\inv_mpu.o"'
+### List of Objects: adding '".\obj\mpu6050.o"'
+### List of Objects: adding '".\obj\mpuiic.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\obj\cortexm3_macro.o" ".\obj\stm32f10x_it.o" ".\obj\stm32f10x_startup.o" ".\obj\stm32f10x_target.o" ".\obj\stm32f10x_adc.o" ".\obj\stm32f10x_bkp.o" ".\obj\stm32f10x_dma.o" ".\obj\stm32f10x_exti.o" ".\obj\stm32f10x_flash.o" ".\obj\stm32f10x_gpio.o" ".\obj\stm32f10x_iwdg.o" ".\obj\stm32f10x_lib.o" ".\obj\stm32f10x_nvic.o" ".\obj\stm32f10x_pwr.o" ".\obj\stm32f10x_rcc.o" ".\obj\stm32f10x_rtc.o" ".\obj\stm32f10x_systick.o" ".\obj\stm32f10x_tim.o" ".\obj\stm32f10x_usart.o" ".\obj\stm32f10x_tim1.o" ".\obj\os_cpu_a.o" ".\obj\os_cpu_c.o" ".\obj\os_dbg.o" ".\obj\ucos_ii.o" ".\obj\uart.o" ".\obj\main.o" ".\obj\create_task.o" ".\obj\detect.o" ".\obj\rf.o" ".\obj\display.o" ".\obj\motor_hal.o" ".\obj\kdebug.o" ".\obj\hoover_disp.o" ".\obj\pcf8563.o" ".\obj\tm1637.o" ".\obj\function.o" ".\obj\inv_mpu_dmp_motion_driver.o" ".\obj\inv_mpu.o" ".\obj\mpu6050.o" ".\obj\mpuiic.o" 
+--strict --scatter ".\Obj\STM32_RtosFlash.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\List\STM32_RtosFlash.map" -o .\Obj\STM32_RtosFlash.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Obj\STM32_RtosFlash.axf'
+### ADS-LD Command File: '.\Obj\STM32_RtosFlash.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Obj\STM32_RtosFlash.lnp', Handle=0x000008F4
+### Writing '.lnp' file
+### ADS-LD Command file '.\Obj\STM32_RtosFlash.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

@@ -1,0 +1,5 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\library\inc -I..\os -I..\user -I..\user\mpu -I..\startup -I..\driver\inc 
+-I "E:\keil v4 for arm\ARM\RV31\INC" 
+-I "E:\keil v4 for arm\ARM\CMSIS\Include" 
+-I "E:\keil v4 for arm\ARM\Inc\ST\STM32F10x" 
+-o "core_task.o" --omf_browse "core_task.crf" --depend "core_task.d" "..\user\core_task.c"

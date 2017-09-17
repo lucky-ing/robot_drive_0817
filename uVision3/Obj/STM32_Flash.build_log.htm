@@ -1,0 +1,222 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+H:\chengxu\robot-driver_17_05_12\uVision3\STM32F103_rtos.uvprojx
+Project File Date:  05/12/2017
+
+<h2>Output:</h2>
+Build target 'BOOT_FLASH'
+compiling stm32f10x_it.c...
+compiling stm32f10x_target.c...
+compiling stm32f10x_rtc.c...
+compiling uart.c...
+compiling main.c...
+compiling create_task.c...
+compiling detect.c...
+..\user\detect.c(625): warning:  #177-D: variable "tmp" was declared but never referenced
+        U16 tmp=0;
+..\user\detect.c(629): warning:  #177-D: variable "data0" was declared but never referenced
+        U8 data0, data1;
+..\user\detect.c(629): warning:  #177-D: variable "data1" was declared but never referenced
+        U8 data0, data1;
+..\user\detect.c(682): warning:  #177-D: variable "tmp" was declared but never referenced
+        U16 tmp=0;
+..\user\detect.c(686): warning:  #177-D: variable "data0" was declared but never referenced
+        U8 data0, data1;
+..\user\detect.c(686): warning:  #177-D: variable "data1" was declared but never referenced
+        U8 data0, data1;
+..\user\detect.c(752): warning:  #177-D: variable "tmp" was declared but never referenced
+        U16 tmp=0;
+..\user\detect.c(757): warning:  #177-D: variable "key_ostime" was declared but never referenced
+        U32 key_ostime  = 0;
+..\user\detect.c(758): warning:  #177-D: variable "delta_time" was declared but never referenced
+        U32 delta_time = 0;
+..\user\detect.c: 9 warnings, 0 errors
+compiling rf.c...
+..\user\rf.c(158): warning:  #177-D: variable "err" was declared but never referenced
+        U8  err = 0;
+..\user\rf.c(159): warning:  #177-D: variable "battery_voltage" was declared but never referenced
+        U16 battery_voltage;
+..\user\rf.c(442): warning:  #223-D: function "led_down" declared implicitly
+                LCD_OPEN_LOW();
+..\user\rf.c(427): warning:  #177-D: variable "i" was declared but never referenced
+        U8 i = 0;  
+..\user\rf.c(428): warning:  #177-D: variable "battery_voltage" was declared but never referenced
+        U16 battery_voltage;
+..\user\rf.c: 5 warnings, 0 errors
+compiling display.c...
+..\user\display.c(190): warning:  #223-D: function "led_gpio_init" declared implicitly
+        led_gpio_init();
+..\user\display.c(259): warning:  #177-D: variable "j" was declared but never referenced
+        U8 j ;
+..\user\display.c: 2 warnings, 0 errors
+compiling motor_hal.c...
+..\user\motor_hal.c(24): warning:  #177-D: variable "now_int_finish" was declared but never referenced
+        U32 now_int_finish = 0;
+..\user\motor_hal.c(63): warning:  #177-D: variable "now_int_finish" was declared but never referenced
+        U32 now_int_finish = 0;
+..\user\motor_hal.c(142): warning:  #177-D: variable "now_int_finish" was declared but never referenced
+        U32 now_int_finish = 0;
+..\user\motor_hal.c(174): warning:  #177-D: variable "now_int_finish" was declared but never referenced
+        U32 now_int_finish = 0;
+..\user\motor_hal.c(216): warning:  #177-D: variable "bat_vol" was declared but never referenced
+        U16 bat_vol = 0;
+..\user\motor_hal.c(217): warning:  #177-D: variable "carpet_pwm_add" was declared but never referenced
+        U16 carpet_pwm_add = 0;
+..\user\motor_hal.c(379): warning:  #550-D: variable "turbo_add" was set but never used
+        U16 turbo_add = 0;
+..\user\motor_hal.c(380): warning:  #177-D: variable "i" was declared but never referenced
+        U16 i = 0;
+..\user\motor_hal.c: 8 warnings, 0 errors
+compiling kdebug.c...
+..\user\kdebug.c(184): warning:  #940-D: missing return statement at end of non-void function "side_motor_test"
+  }
+..\user\kdebug.c(405): warning:  #940-D: missing return statement at end of non-void function "main_motor_test"
+  }
+..\user\kdebug.c(419): warning:  #223-D: function "i2cInit" declared implicitly
+        i2cInit();//IIC总线的初始化，尼玛纠结了这么长时间
+..\user\kdebug.c(422): warning:  #223-D: function "mpu_init" declared implicitly
+        mpu_test_result = mpu_init();
+..\user\kdebug.c(436): warning:  #940-D: missing return statement at end of non-void function "mpu_test"
+  }
+..\user\kdebug.c(471): warning:  #940-D: missing return statement at end of non-void function "rtc_test"
+  }
+..\user\kdebug.c(758): warning:  #177-D: variable "vol" was declared but never referenced
+        U16 vol;
+..\user\kdebug.c(821): warning:  #177-D: variable "time" was declared but never referenced
+        SYSTEMTIME time,time1;
+..\user\kdebug.c(821): warning:  #177-D: variable "time1" was declared but never referenced
+        SYSTEMTIME time,time1;
+..\user\kdebug.c: 9 warnings, 0 errors
+compiling hoover_disp.c...
+..\user\hoover_disp.c(310): warning:  #177-D: variable "ten" was declared but never referenced
+        int ten = 0;
+..\user\hoover_disp.c(446): warning:  #177-D: variable "ten" was declared but never referenced
+        U8 ten = 0;
+..\user\hoover_disp.c: 2 warnings, 0 errors
+compiling pcf8563.c...
+..\user\pcf8563.c(42): warning:  #177-D: variable "rc" was declared but never referenced
+        U8 rc = 0;
+..\user\pcf8563.c: 1 warning, 0 errors
+compiling tm1637.c...
+..\user\tm1637.c(156): warning:  #177-D: variable "j" was declared but never referenced
+  U8 j = 0;
+..\user\tm1637.c(183): warning:  #177-D: variable "i" was declared but never referenced
+  unsigned char i;
+..\user\tm1637.c(184): warning:  #177-D: variable "j" was declared but never referenced
+  U8 j = 0;
+..\user\tm1637.c(228): warning:  #223-D: function "memset" declared implicitly
+                memset((U8 *)g_led, 0, 5);
+..\user\tm1637.c(302): warning:  #223-D: function "memset" declared implicitly
+        memset((U8 *)g_led, 0, 5);
+..\user\tm1637.c(295): warning:  #177-D: variable "i" was declared but never referenced
+        U8 i,j;
+..\user\tm1637.c(295): warning:  #177-D: variable "j" was declared but never referenced
+        U8 i,j;
+..\user\tm1637.c: 7 warnings, 0 errors
+compiling mpu_i2c.c...
+..\user\mpu\mpu_i2c.c(235): warning:  #68-D: integer conversion resulted in a change of sign
+                return MPU_FALSE;
+..\user\mpu\mpu_i2c.c(247): warning:  #68-D: integer conversion resulted in a change of sign
+                return MPU_FALSE;
+..\user\mpu\mpu_i2c.c(814): warning:  #177-D: variable "rev" was declared but never referenced
+      unsigned char data[6], rev;
+..\user\mpu\mpu_i2c.c(428): warning:  #177-D: function "set_int_enable" was declared but never referenced
+  static int set_int_enable(unsigned char enable);
+..\user\mpu\mpu_i2c.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=19136 RO-data=404 RW-data=256 ZI-data=7216  
+FromELF: creating hex file...
+".\Obj\STM32_Flash.axf" - 0 Error(s), 47 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.1.0.pack
+                ARM::CMSIS:CORE:3.30.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.30.0
+
+<h2>Collection of Component include folders:</h2>
+  H:\chengxu\robot-driver_17_05_12\uVision3\RTE
+  h:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.30.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+</pre>
+</body>
+</html>
+7: unrecognized token
+  ?/extern uart_command_t Uart_Send_Buffer;
+..\driver\inc\uart.h(101): error:  #169: expected a declaration
+  ?/extern uart_command_t Uart_Send_Buffer;
+..\user\hoover_disp.c(310): warning:  #177-D: variable "ten" was declared but never referenced
+        int ten = 0;
+..\user\hoover_disp.c(446): warning:  #177-D: variable "ten" was declared but never referenced
+        U8 ten = 0;
+..\user\hoover_disp.c: 2 warnings, 2 errors
+compiling pcf8563.c...
+..\driver\inc\uart.h(101): error:  #7: unrecognized token
+  ?/extern uart_command_t Uart_Send_Buffer;
+..\driver\inc\uart.h(101): error:  #169: expected a declaration
+  ?/extern uart_command_t Uart_Send_Buffer;
+..\user\pcf8563.c(42): warning:  #177-D: variable "rc" was declared but never referenced
+        U8 rc = 0;
+..\user\pcf8563.c: 1 warning, 2 errors
+compiling tm1637.c...
+..\driver\inc\uart.h(101): error:  #7: unrecognized token
+  ?/extern uart_command_t Uart_Send_Buffer;
+..\driver\inc\uart.h(101): error:  #169: expected a declaration
+  ?/extern uart_command_t Uart_Send_Buffer;
+..\user\tm1637.c(156): warning:  #177-D: variable "j" was declared but never referenced
+  U8 j = 0;
+..\user\tm1637.c(183): warning:  #177-D: variable "i" was declared but never referenced
+  unsigned char i;
+..\user\tm1637.c(184): warning:  #177-D: variable "j" was declared but never referenced
+  U8 j = 0;
+..\user\tm1637.c(228): warning:  #223-D: function "memset" declared implicitly
+                memset((U8 *)g_led, 0, 5);
+..\user\tm1637.c(302): warning:  #223-D: function "memset" declared implicitly
+        memset((U8 *)g_led, 0, 5);
+..\user\tm1637.c(295): warning:  #177-D: variable "i" was declared but never referenced
+        U8 i,j;
+..\user\tm1637.c(295): warning:  #177-D: variable "j" was declared but never referenced
+        U8 i,j;
+..\user\tm1637.c: 7 warnings, 2 errors
+compiling mpu_i2c.c...
+..\driver\inc\uart.h(101): error:  #7: unrecognized token
+  ?/extern uart_command_t Uart_Send_Buffer;
+..\driver\inc\uart.h(101): error:  #169: expected a declaration
+  ?/extern uart_command_t Uart_Send_Buffer;
+..\user\mpu\mpu_i2c.c(235): warning:  #68-D: integer conversion resulted in a change of sign
+                return MPU_FALSE;
+..\user\mpu\mpu_i2c.c(247): warning:  #68-D: integer conversion resulted in a change of sign
+                return MPU_FALSE;
+..\user\mpu\mpu_i2c.c(814): warning:  #177-D: variable "rev" was declared but never referenced
+      unsigned char data[6], rev;
+..\user\mpu\mpu_i2c.c(428): warning:  #177-D: function "set_int_enable" was declared but never referenced
+  static int set_int_enable(unsigned char enable);
+..\user\mpu\mpu_i2c.c: 4 warnings, 2 errors
+".\Obj\STM32_Flash.axf" - 30 Error(s), 47 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.1.0.pack
+                ARM::CMSIS:CORE:3.30.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.30.0
+
+<h2>Collection of Component include folders:</h2>
+  H:\chengxu\robot-driver_17_05_12\uVision3\RTE
+  h:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.30.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+Target not created

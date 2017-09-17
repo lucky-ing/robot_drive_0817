@@ -1,0 +1,1 @@
+-c --device DARMSTM -g -O2 --apcs=interwork --split_sections -I..\driver\inc -I..\library\inc -I..\os -I..\startup -I..\user -I "C:\ZCK_ZONE\software\ARM\INC\ST\STM32F10x" -DVECT_TAB_FLASH -o ".\Obj\stm32f10x_spi.o" --omf_browse ".\Obj\stm32f10x_spi.crf" --depend ".\Obj\stm32f10x_spi.d" "..\library\src\stm32f10x_spi.c"

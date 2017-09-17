@@ -1,0 +1,916 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;******************** (C) COPYRIGHT 2007 STMicroelectron
+                       ics ********************
+    2 00000000         
+    3 00000000         ;* File Name          : cortexm3_macro.s
+    4 00000000         
+    5 00000000         ;* Author             : MCD Application Team
+    6 00000000         
+    7 00000000         ;* Date First Issued  : 09/29/2006
+    8 00000000         
+    9 00000000         ;* Description        : Instruction wrappers for special
+                        Cortex-M3 instructions.
+   10 00000000         
+   11 00000000         ;*******************************************************
+                       ************************
+   12 00000000         
+   13 00000000         ; History:
+   14 00000000         
+   15 00000000         ; 05/21/2007: V0.3
+   16 00000000         
+   17 00000000         ; 04/02/2007: V0.2
+   18 00000000         
+   19 00000000         ; 02/05/2007: V0.1
+   20 00000000         
+   21 00000000         ; 09/29/2006: V0.01
+   22 00000000         
+   23 00000000         ;*******************************************************
+                       ************************
+   24 00000000         
+   25 00000000         ; THE PRESENT SOFTWARE WHICH IS FOR GUIDANCE ONLY AIMS A
+                       T PROVIDING CUSTOMERS
+   26 00000000         
+   27 00000000         ; WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN OR
+                       DER FOR THEM TO SAVE TIME.
+   28 00000000         
+   29 00000000         ; AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIAB
+                       LE FOR ANY DIRECT,
+   30 00000000         
+   31 00000000         ; INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY 
+                       CLAIMS ARISING FROM THE
+   32 00000000         
+   33 00000000         ; CONTENT OF SUCH SOFTWARE AND/OR THE USE MADE BY CUSTOM
+                       ERS OF THE CODING
+   34 00000000         
+   35 00000000         ; INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR 
+                       PRODUCTS.
+   36 00000000         
+   37 00000000         ;*******************************************************
+                       ************************
+   38 00000000         
+   39 00000000         
+   40 00000000         
+   41 00000000                 THUMB
+   42 00000000         
+   43 00000000                 REQUIRE8
+   44 00000000         
+   45 00000000                 PRESERVE8
+   46 00000000         
+   47 00000000         
+   48 00000000         
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+   49 00000000                 AREA             |.text|, CODE, READONLY, ALIGN=
+2
+   50 00000000         
+   51 00000000         
+   52 00000000         
+   53 00000000         ; Exported functions
+   54 00000000         
+   55 00000000                 EXPORT           __WFI
+   56 00000000         
+   57 00000000                 EXPORT           __WFE
+   58 00000000         
+   59 00000000                 EXPORT           __SEV
+   60 00000000         
+   61 00000000                 EXPORT           __ISB
+   62 00000000         
+   63 00000000                 EXPORT           __DSB
+   64 00000000         
+   65 00000000                 EXPORT           __DMB
+   66 00000000         
+   67 00000000                 EXPORT           __SVC
+   68 00000000         
+   69 00000000                 EXPORT           __MRS_CONTROL
+   70 00000000         
+   71 00000000                 EXPORT           __MSR_CONTROL
+   72 00000000         
+   73 00000000                 EXPORT           __MRS_PSP
+   74 00000000         
+   75 00000000                 EXPORT           __MSR_PSP
+   76 00000000         
+   77 00000000                 EXPORT           __MRS_MSP
+   78 00000000         
+   79 00000000                 EXPORT           __MSR_MSP
+   80 00000000         
+   81 00000000                 EXPORT           __SETPRIMASK
+   82 00000000         
+   83 00000000                 EXPORT           __RESETPRIMASK
+   84 00000000         
+   85 00000000                 EXPORT           __SETFAULTMASK
+   86 00000000         
+   87 00000000                 EXPORT           __RESETFAULTMASK
+   88 00000000         
+   89 00000000                 EXPORT           __BASEPRICONFIG
+   90 00000000         
+   91 00000000                 EXPORT           __GetBASEPRI
+   92 00000000         
+   93 00000000                 EXPORT           __REV_HalfWord
+   94 00000000         
+   95 00000000                 EXPORT           __REV_Word
+   96 00000000         
+   97 00000000         
+   98 00000000         
+   99 00000000         ;*******************************************************
+                       ************************
+  100 00000000         
+  101 00000000         ; Function Name  : __WFI
+  102 00000000         
+  103 00000000         ; Description    : Assembler function for the WFI instru
+                       ction.
+  104 00000000         
+
+
+
+ARM Macro Assembler    Page 3 
+
+
+  105 00000000         ; Input          : None
+  106 00000000         
+  107 00000000         ; Return         : None
+  108 00000000         
+  109 00000000         ;*******************************************************
+                       ************************
+  110 00000000         
+  111 00000000         __WFI
+  112 00000000         
+  113 00000000         
+  114 00000000         
+  115 00000000 BF30            WFI
+  116 00000002         
+  117 00000002 4770            BX               r14
+  118 00000004         
+  119 00000004         
+  120 00000004         
+  121 00000004         ;*******************************************************
+                       ************************
+  122 00000004         
+  123 00000004         ; Function Name  : __WFE
+  124 00000004         
+  125 00000004         ; Description    : Assembler function for the WFE instru
+                       ction.
+  126 00000004         
+  127 00000004         ; Input          : None
+  128 00000004         
+  129 00000004         ; Return         : None
+  130 00000004         
+  131 00000004         ;*******************************************************
+                       ************************
+  132 00000004         
+  133 00000004         __WFE
+  134 00000004         
+  135 00000004         
+  136 00000004         
+  137 00000004 BF20            WFE
+  138 00000006         
+  139 00000006 4770            BX               r14
+  140 00000008         
+  141 00000008         
+  142 00000008         
+  143 00000008         ;*******************************************************
+                       ************************
+  144 00000008         
+  145 00000008         ; Function Name  : __SEV
+  146 00000008         
+  147 00000008         ; Description    : Assembler function for the SEV instru
+                       ction.
+  148 00000008         
+  149 00000008         ; Input          : None
+  150 00000008         
+  151 00000008         ; Return         : None
+  152 00000008         
+  153 00000008         ;*******************************************************
+                       ************************
+  154 00000008         
+  155 00000008         __SEV
+  156 00000008         
+
+
+
+ARM Macro Assembler    Page 4 
+
+
+  157 00000008         
+  158 00000008         
+  159 00000008 BF40            SEV
+  160 0000000A         
+  161 0000000A 4770            BX               r14
+  162 0000000C         
+  163 0000000C         
+  164 0000000C         
+  165 0000000C         ;*******************************************************
+                       ************************
+  166 0000000C         
+  167 0000000C         ; Function Name  : __ISB
+  168 0000000C         
+  169 0000000C         ; Description    : Assembler function for the ISB instru
+                       ction.
+  170 0000000C         
+  171 0000000C         ; Input          : None
+  172 0000000C         
+  173 0000000C         ; Return         : None
+  174 0000000C         
+  175 0000000C         ;*******************************************************
+                       ************************
+  176 0000000C         
+  177 0000000C         __ISB
+  178 0000000C         
+  179 0000000C         
+  180 0000000C         
+  181 0000000C F3BF 8F6F       ISB
+  182 00000010         
+  183 00000010 4770            BX               r14
+  184 00000012         
+  185 00000012         
+  186 00000012         
+  187 00000012         ;*******************************************************
+                       ************************
+  188 00000012         
+  189 00000012         ; Function Name  : __DSB
+  190 00000012         
+  191 00000012         ; Description    : Assembler function for the DSB instru
+                       ction.
+  192 00000012         
+  193 00000012         ; Input          : None
+  194 00000012         
+  195 00000012         ; Return         : None
+  196 00000012         
+  197 00000012         ;*******************************************************
+                       ************************
+  198 00000012         
+  199 00000012         __DSB
+  200 00000012         
+  201 00000012         
+  202 00000012         
+  203 00000012 F3BF 8F4F       DSB
+  204 00000016         
+  205 00000016 4770            BX               r14
+  206 00000018         
+  207 00000018         
+  208 00000018         
+  209 00000018         ;*******************************************************
+
+
+
+ARM Macro Assembler    Page 5 
+
+
+                       ************************
+  210 00000018         
+  211 00000018         ; Function Name  : __DMB
+  212 00000018         
+  213 00000018         ; Description    : Assembler function for the DMB instru
+                       ction.
+  214 00000018         
+  215 00000018         ; Input          : None
+  216 00000018         
+  217 00000018         ; Return         : None
+  218 00000018         
+  219 00000018         ;*******************************************************
+                       ************************
+  220 00000018         
+  221 00000018         __DMB
+  222 00000018         
+  223 00000018         
+  224 00000018         
+  225 00000018 F3BF 8F5F       DMB
+  226 0000001C         
+  227 0000001C 4770            BX               r14
+  228 0000001E         
+  229 0000001E         
+  230 0000001E         
+  231 0000001E         ;*******************************************************
+                       ************************
+  232 0000001E         
+  233 0000001E         ; Function Name  : __SVC
+  234 0000001E         
+  235 0000001E         ; Description    : Assembler function for the SVC instru
+                       ction.
+  236 0000001E         
+  237 0000001E         ; Input          : None
+  238 0000001E         
+  239 0000001E         ; Return         : None
+  240 0000001E         
+  241 0000001E         ;*******************************************************
+                       ************************
+  242 0000001E         
+  243 0000001E         __SVC
+  244 0000001E         
+  245 0000001E         
+  246 0000001E         
+  247 0000001E DF01            SVC              0x01
+  248 00000020         
+  249 00000020 4770            BX               r14
+  250 00000022         
+  251 00000022         
+  252 00000022         
+  253 00000022         ;*******************************************************
+                       ************************
+  254 00000022         
+  255 00000022         ; Function Name  : __MRS_CONTROL
+  256 00000022         
+  257 00000022         ; Description    : Assembler function for the MRS instru
+                       ction.
+  258 00000022         
+  259 00000022         ; Input          : None
+  260 00000022         
+
+
+
+ARM Macro Assembler    Page 6 
+
+
+  261 00000022         ; Return         : - r0 : Cortex-M3 CONTROL register val
+                       ue.
+  262 00000022         
+  263 00000022         ;*******************************************************
+                       ************************
+  264 00000022         
+  265 00000022         __MRS_CONTROL
+  266 00000022         
+  267 00000022         
+  268 00000022         
+  269 00000022 F3EF 8014       MRS              r0, CONTROL
+  270 00000026         
+  271 00000026 4770            BX               r14
+  272 00000028         
+  273 00000028         
+  274 00000028         
+  275 00000028         ;*******************************************************
+                       ************************
+  276 00000028         
+  277 00000028         ; Function Name  : __MSR_CONTROL
+  278 00000028         
+  279 00000028         ; Description    : Assembler function for the MSR instru
+                       ction.
+  280 00000028         
+  281 00000028         ; Input          : - r0 : Cortex-M3 CONTROL register new
+                        value.  
+  282 00000028         
+  283 00000028         ; Return         : None
+  284 00000028         
+  285 00000028         ;*******************************************************
+                       ************************
+  286 00000028         
+  287 00000028         __MSR_CONTROL
+  288 00000028         
+  289 00000028         
+  290 00000028         
+  291 00000028 F380 8814       MSR              CONTROL, r0
+  292 0000002C         
+  293 0000002C F3BF 8F6F       ISB
+  294 00000030         
+  295 00000030 4770            BX               r14
+  296 00000032         
+  297 00000032         
+  298 00000032         
+  299 00000032         ;*******************************************************
+                       ************************
+  300 00000032         
+  301 00000032         ; Function Name  : __MRS_PSP
+  302 00000032         
+  303 00000032         ; Description    : Assembler function for the MRS instru
+                       ction.
+  304 00000032         
+  305 00000032         ; Input          : None
+  306 00000032         
+  307 00000032         ; Return         : - r0 : Process Stack value.
+  308 00000032         
+  309 00000032         ;*******************************************************
+                       ************************
+  310 00000032         
+
+
+
+ARM Macro Assembler    Page 7 
+
+
+  311 00000032         __MRS_PSP
+  312 00000032         
+  313 00000032         
+  314 00000032         
+  315 00000032 F3EF 8009       MRS              r0, PSP
+  316 00000036         
+  317 00000036 4770            BX               r14
+  318 00000038         
+  319 00000038         
+  320 00000038         
+  321 00000038         ;*******************************************************
+                       ************************
+  322 00000038         
+  323 00000038         ; Function Name  : __MSR_PSP
+  324 00000038         
+  325 00000038         ; Description    : Assembler function for the MSR instru
+                       ction.
+  326 00000038         
+  327 00000038         ; Input          : - r0 : Process Stack new value.  
+  328 00000038         
+  329 00000038         ; Return         : None
+  330 00000038         
+  331 00000038         ;*******************************************************
+                       ************************
+  332 00000038         
+  333 00000038         __MSR_PSP
+  334 00000038         
+  335 00000038         
+  336 00000038         
+  337 00000038 F380 8809       MSR              PSP, r0     ; set Process Stack
+                                                             value
+  338 0000003C         
+  339 0000003C 4770            BX               r14
+  340 0000003E         
+  341 0000003E         
+  342 0000003E         
+  343 0000003E         ;*******************************************************
+                       ************************
+  344 0000003E         
+  345 0000003E         ; Function Name  : __MRS_MSP
+  346 0000003E         
+  347 0000003E         ; Description    : Assembler function for the MRS instru
+                       ction.
+  348 0000003E         
+  349 0000003E         ; Input          : None
+  350 0000003E         
+  351 0000003E         ; Return         : - r0 : Main Stack value.
+  352 0000003E         
+  353 0000003E         ;*******************************************************
+                       ************************
+  354 0000003E         
+  355 0000003E         __MRS_MSP
+  356 0000003E         
+  357 0000003E         
+  358 0000003E         
+  359 0000003E F3EF 8008       MRS              r0, MSP
+  360 00000042         
+  361 00000042 4770            BX               r14
+  362 00000044         
+
+
+
+ARM Macro Assembler    Page 8 
+
+
+  363 00000044         
+  364 00000044         
+  365 00000044         ;*******************************************************
+                       ************************
+  366 00000044         
+  367 00000044         ; Function Name  : __MSR_MSP
+  368 00000044         
+  369 00000044         ; Description    : Assembler function for the MSR instru
+                       ction.
+  370 00000044         
+  371 00000044         ; Input          : - r0 : Main Stack new value.  
+  372 00000044         
+  373 00000044         ; Return         : None
+  374 00000044         
+  375 00000044         ;*******************************************************
+                       ************************
+  376 00000044         
+  377 00000044         __MSR_MSP
+  378 00000044         
+  379 00000044         
+  380 00000044         
+  381 00000044 F380 8808       MSR              MSP, r0     ; set Main Stack va
+                                                            lue
+  382 00000048         
+  383 00000048 4770            BX               r14
+  384 0000004A         
+  385 0000004A         
+  386 0000004A         
+  387 0000004A         ;*******************************************************
+                       ************************
+  388 0000004A         
+  389 0000004A         ; Function Name  : __SETPRIMASK
+  390 0000004A         
+  391 0000004A         ; Description    : Assembler function to set the PRIMASK
+                       .
+  392 0000004A         
+  393 0000004A         ; Input          : None 
+  394 0000004A         
+  395 0000004A         ; Return         : None
+  396 0000004A         
+  397 0000004A         ;*******************************************************
+                       ************************
+  398 0000004A         
+  399 0000004A         __SETPRIMASK
+  400 0000004A         
+  401 0000004A         
+  402 0000004A         
+  403 0000004A B672            CPSID            i
+  404 0000004C         
+  405 0000004C 4770            BX               r14
+  406 0000004E         
+  407 0000004E         
+  408 0000004E         
+  409 0000004E         ;*******************************************************
+                       ************************
+  410 0000004E         
+  411 0000004E         ; Function Name  : __RESETPRIMASK
+  412 0000004E         
+  413 0000004E         ; Description    : Assembler function to reset the PRIMA
+
+
+
+ARM Macro Assembler    Page 9 
+
+
+                       SK.
+  414 0000004E         
+  415 0000004E         ; Input          : None 
+  416 0000004E         
+  417 0000004E         ; Return         : None
+  418 0000004E         
+  419 0000004E         ;*******************************************************
+                       ************************
+  420 0000004E         
+  421 0000004E         __RESETPRIMASK
+  422 0000004E         
+  423 0000004E         
+  424 0000004E         
+  425 0000004E B662            CPSIE            i
+  426 00000050         
+  427 00000050 4770            BX               r14
+  428 00000052         
+  429 00000052         
+  430 00000052         
+  431 00000052         ;*******************************************************
+                       ************************
+  432 00000052         
+  433 00000052         ; Function Name  : __SETFAULTMASK
+  434 00000052         
+  435 00000052         ; Description    : Assembler function to set the FAULTMA
+                       SK.
+  436 00000052         
+  437 00000052         ; Input          : None 
+  438 00000052         
+  439 00000052         ; Return         : None
+  440 00000052         
+  441 00000052         ;*******************************************************
+                       ************************
+  442 00000052         
+  443 00000052         __SETFAULTMASK
+  444 00000052         
+  445 00000052         
+  446 00000052         
+  447 00000052 B671            CPSID            f
+  448 00000054         
+  449 00000054 4770            BX               r14
+  450 00000056         
+  451 00000056         
+  452 00000056         
+  453 00000056         ;*******************************************************
+                       ************************
+  454 00000056         
+  455 00000056         ; Function Name  : __RESETFAULTMASK
+  456 00000056         
+  457 00000056         ; Description    : Assembler function to reset the FAULT
+                       MASK.
+  458 00000056         
+  459 00000056         ; Input          : None 
+  460 00000056         
+  461 00000056         ; Return         : None
+  462 00000056         
+  463 00000056         ;*******************************************************
+                       ************************
+  464 00000056         
+
+
+
+ARM Macro Assembler    Page 10 
+
+
+  465 00000056         __RESETFAULTMASK
+  466 00000056         
+  467 00000056         
+  468 00000056         
+  469 00000056 B661            CPSIE            f
+  470 00000058         
+  471 00000058 4770            BX               r14
+  472 0000005A         
+  473 0000005A         
+  474 0000005A         
+  475 0000005A         ;*******************************************************
+                       ************************
+  476 0000005A         
+  477 0000005A         ; Function Name  : __BASEPRICONFIG
+  478 0000005A         
+  479 0000005A         ; Description    : Assembler function to set the Base Pr
+                       iority.
+  480 0000005A         
+  481 0000005A         ; Input          : - r0 : Base Priority new value  
+  482 0000005A         
+  483 0000005A         ; Return         : None
+  484 0000005A         
+  485 0000005A         ;*******************************************************
+                       ************************
+  486 0000005A         
+  487 0000005A         __BASEPRICONFIG
+  488 0000005A         
+  489 0000005A         
+  490 0000005A         
+  491 0000005A F380 8811       MSR              BASEPRI, r0
+  492 0000005E         
+  493 0000005E 4770            BX               r14
+  494 00000060         
+  495 00000060         
+  496 00000060         
+  497 00000060         ;*******************************************************
+                       ************************
+  498 00000060         
+  499 00000060         ; Function Name  : __GetBASEPRI
+  500 00000060         
+  501 00000060         ; Description    : Assembler function to get the Base Pr
+                       iority value.
+  502 00000060         
+  503 00000060         ; Input          : None 
+  504 00000060         
+  505 00000060         ; Return         : - r0 : Base Priority value 
+  506 00000060         
+  507 00000060         ;*******************************************************
+                       ************************
+  508 00000060         
+  509 00000060         __GetBASEPRI
+  510 00000060         
+  511 00000060         
+  512 00000060         
+  513 00000060 F3EF 8012       MRS              r0, BASEPRI_MAX
+  514 00000064         
+  515 00000064 4770            BX               r14
+  516 00000066         
+  517 00000066         
+
+
+
+ARM Macro Assembler    Page 11 
+
+
+  518 00000066         
+  519 00000066         ;*******************************************************
+                       ************************
+  520 00000066         
+  521 00000066         ; Function Name  : __REV_HalfWord
+  522 00000066         
+  523 00000066         ; Description    : Reverses the byte order in HalfWord(1
+                       6-bit) input variable.
+  524 00000066         
+  525 00000066         ; Input          : - r0 : specifies the input variable
+  526 00000066         
+  527 00000066         ; Return         : - r0 : holds tve variable value after
+                        byte reversing.
+  528 00000066         
+  529 00000066         ;*******************************************************
+                       ************************
+  530 00000066         
+  531 00000066         __REV_HalfWord
+  532 00000066         
+  533 00000066         
+  534 00000066         
+  535 00000066 BA40            REV16            r0, r0
+  536 00000068         
+  537 00000068 4770            BX               r14
+  538 0000006A         
+  539 0000006A         
+  540 0000006A         
+  541 0000006A         ;*******************************************************
+                       ************************
+  542 0000006A         
+  543 0000006A         ; Function Name  : __REV_Word
+  544 0000006A         
+  545 0000006A         ; Description    : Reverses the byte order in Word(32-bi
+                       t) input variable.
+  546 0000006A         
+  547 0000006A         ; Input          : - r0 : specifies the input variable
+  548 0000006A         
+  549 0000006A         ; Return         : - r0 : holds tve variable value after
+                        byte reversing.
+  550 0000006A         
+  551 0000006A         ;*******************************************************
+                       ************************
+  552 0000006A         
+  553 0000006A         __REV_Word
+  554 0000006A         
+  555 0000006A         
+  556 0000006A         
+  557 0000006A BA00            REV              r0, r0
+  558 0000006C         
+  559 0000006C 4770            BX               r14
+  560 0000006E         
+  561 0000006E         
+  562 0000006E         
+  563 0000006E                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\Obj\co
+rtexm3_macro.d -o.\Obj\cortexm3_macro.o -I"E:\keil v4 for arm\ARM\RV31\INC" -I"
+E:\keil v4 for arm\ARM\CMSIS\Include" --predefine="ARM_MATH_CM3 SETA 1" --list=
+.\List\cortexm3_macro.lst ..\startup\cortexm3_macro.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 49 in file ..\startup\cortexm3_macro.s
+   Uses
+      None
+Comment: .text unused
+__BASEPRICONFIG 0000005A
+
+Symbol: __BASEPRICONFIG
+   Definitions
+      At line 487 in file ..\startup\cortexm3_macro.s
+   Uses
+      At line 89 in file ..\startup\cortexm3_macro.s
+Comment: __BASEPRICONFIG used once
+__DMB 00000018
+
+Symbol: __DMB
+   Definitions
+      At line 221 in file ..\startup\cortexm3_macro.s
+   Uses
+      At line 65 in file ..\startup\cortexm3_macro.s
+Comment: __DMB used once
+__DSB 00000012
+
+Symbol: __DSB
+   Definitions
+      At line 199 in file ..\startup\cortexm3_macro.s
+   Uses
+      At line 63 in file ..\startup\cortexm3_macro.s
+Comment: __DSB used once
+__GetBASEPRI 00000060
+
+Symbol: __GetBASEPRI
+   Definitions
+      At line 509 in file ..\startup\cortexm3_macro.s
+   Uses
+      At line 91 in file ..\startup\cortexm3_macro.s
+Comment: __GetBASEPRI used once
+__ISB 0000000C
+
+Symbol: __ISB
+   Definitions
+      At line 177 in file ..\startup\cortexm3_macro.s
+   Uses
+      At line 61 in file ..\startup\cortexm3_macro.s
+Comment: __ISB used once
+__MRS_CONTROL 00000022
+
+Symbol: __MRS_CONTROL
+   Definitions
+      At line 265 in file ..\startup\cortexm3_macro.s
+   Uses
+      At line 69 in file ..\startup\cortexm3_macro.s
+Comment: __MRS_CONTROL used once
+__MRS_MSP 0000003E
+
+Symbol: __MRS_MSP
+
+
+
+ARM Macro Assembler    Page 2 Alphabetic symbol ordering
+Relocatable symbols
+
+   Definitions
+      At line 355 in file ..\startup\cortexm3_macro.s
+   Uses
+      At line 77 in file ..\startup\cortexm3_macro.s
+Comment: __MRS_MSP used once
+__MRS_PSP 00000032
+
+Symbol: __MRS_PSP
+   Definitions
+      At line 311 in file ..\startup\cortexm3_macro.s
+   Uses
+      At line 73 in file ..\startup\cortexm3_macro.s
+Comment: __MRS_PSP used once
+__MSR_CONTROL 00000028
+
+Symbol: __MSR_CONTROL
+   Definitions
+      At line 287 in file ..\startup\cortexm3_macro.s
+   Uses
+      At line 71 in file ..\startup\cortexm3_macro.s
+Comment: __MSR_CONTROL used once
+__MSR_MSP 00000044
+
+Symbol: __MSR_MSP
+   Definitions
+      At line 377 in file ..\startup\cortexm3_macro.s
+   Uses
+      At line 79 in file ..\startup\cortexm3_macro.s
+Comment: __MSR_MSP used once
+__MSR_PSP 00000038
+
+Symbol: __MSR_PSP
+   Definitions
+      At line 333 in file ..\startup\cortexm3_macro.s
+   Uses
+      At line 75 in file ..\startup\cortexm3_macro.s
+Comment: __MSR_PSP used once
+__RESETFAULTMASK 00000056
+
+Symbol: __RESETFAULTMASK
+   Definitions
+      At line 465 in file ..\startup\cortexm3_macro.s
+   Uses
+      At line 87 in file ..\startup\cortexm3_macro.s
+Comment: __RESETFAULTMASK used once
+__RESETPRIMASK 0000004E
+
+Symbol: __RESETPRIMASK
+   Definitions
+      At line 421 in file ..\startup\cortexm3_macro.s
+   Uses
+      At line 83 in file ..\startup\cortexm3_macro.s
+Comment: __RESETPRIMASK used once
+__REV_HalfWord 00000066
+
+Symbol: __REV_HalfWord
+   Definitions
+      At line 531 in file ..\startup\cortexm3_macro.s
+   Uses
+
+
+
+ARM Macro Assembler    Page 3 Alphabetic symbol ordering
+Relocatable symbols
+
+      At line 93 in file ..\startup\cortexm3_macro.s
+Comment: __REV_HalfWord used once
+__REV_Word 0000006A
+
+Symbol: __REV_Word
+   Definitions
+      At line 553 in file ..\startup\cortexm3_macro.s
+   Uses
+      At line 95 in file ..\startup\cortexm3_macro.s
+Comment: __REV_Word used once
+__SETFAULTMASK 00000052
+
+Symbol: __SETFAULTMASK
+   Definitions
+      At line 443 in file ..\startup\cortexm3_macro.s
+   Uses
+      At line 85 in file ..\startup\cortexm3_macro.s
+Comment: __SETFAULTMASK used once
+__SETPRIMASK 0000004A
+
+Symbol: __SETPRIMASK
+   Definitions
+      At line 399 in file ..\startup\cortexm3_macro.s
+   Uses
+      At line 81 in file ..\startup\cortexm3_macro.s
+Comment: __SETPRIMASK used once
+__SEV 00000008
+
+Symbol: __SEV
+   Definitions
+      At line 155 in file ..\startup\cortexm3_macro.s
+   Uses
+      At line 59 in file ..\startup\cortexm3_macro.s
+Comment: __SEV used once
+__SVC 0000001E
+
+Symbol: __SVC
+   Definitions
+      At line 243 in file ..\startup\cortexm3_macro.s
+   Uses
+      At line 67 in file ..\startup\cortexm3_macro.s
+Comment: __SVC used once
+__WFE 00000004
+
+Symbol: __WFE
+   Definitions
+      At line 133 in file ..\startup\cortexm3_macro.s
+   Uses
+      At line 57 in file ..\startup\cortexm3_macro.s
+Comment: __WFE used once
+__WFI 00000000
+
+Symbol: __WFI
+   Definitions
+      At line 111 in file ..\startup\cortexm3_macro.s
+   Uses
+      At line 55 in file ..\startup\cortexm3_macro.s
+Comment: __WFI used once
+22 symbols
+
+
+
+ARM Macro Assembler    Page 4 Alphabetic symbol ordering
+Relocatable symbols
+
+353 symbols in table
